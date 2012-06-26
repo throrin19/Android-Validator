@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Android-Validator</string>
+
+    <string name="validator_email">The e-mail address is not in a valid format.</string>
+    <string name="validator_empty">You must complete this field.</string>
+    <string name="validator_url">The URL entered is incorrect.</string>
 </resources>
