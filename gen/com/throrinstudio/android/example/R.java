@@ -9,17 +9,93 @@ package com.throrinstudio.android.example;
 
 public final class R {
     public static final class attr {
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int cancelLabel=0x7f010001;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int okLabel=0x7f010000;
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
     }
+    public static final class id {
+        public static final int widget_okcancelbar_cancel=0x7f050000;
+        public static final int widget_okcancelbar_ok=0x7f050001;
+    }
     public static final class layout {
         public static final int main=0x7f030000;
+        public static final int widget_ok_cancel_bar=0x7f030001;
     }
     public static final class string {
         public static final int app_name=0x7f040000;
-        public static final int validator_email=0x7f040001;
-        public static final int validator_empty=0x7f040002;
-        public static final int validator_url=0x7f040003;
+        public static final int global_about=0x7f040002;
+        public static final int global_accept=0x7f04000a;
+        public static final int global_address=0x7f040009;
+        public static final int global_cancel=0x7f040003;
+        public static final int global_email=0x7f040007;
+        public static final int global_name=0x7f040005;
+        public static final int global_password=0x7f040004;
+        public static final int global_phone=0x7f040006;
+        public static final int global_submit=0x7f040001;
+        public static final int global_website=0x7f040008;
+        public static final int validator_email=0x7f04000b;
+        public static final int validator_empty=0x7f04000c;
+        public static final int validator_url=0x7f04000d;
     }
+    public static final class styleable {
+        /** Attributes that can be used with a OkCancelBar.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #OkCancelBar_cancelLabel com.throrinstudio.android.example:cancelLabel}</code></td><td></td></tr>
+           <tr><td><code>{@link #OkCancelBar_okLabel com.throrinstudio.android.example:okLabel}</code></td><td></td></tr>
+           </table>
+           @see #OkCancelBar_cancelLabel
+           @see #OkCancelBar_okLabel
+         */
+        public static final int[] OkCancelBar = {
+            0x7f010000, 0x7f010001
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.throrinstudio.android.example.R.attr#cancelLabel}
+          attribute's value can be found in the {@link #OkCancelBar} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:cancelLabel
+        */
+        public static final int OkCancelBar_cancelLabel = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.throrinstudio.android.example.R.attr#okLabel}
+          attribute's value can be found in the {@link #OkCancelBar} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:okLabel
+        */
+        public static final int OkCancelBar_okLabel = 0;
+    };
 }

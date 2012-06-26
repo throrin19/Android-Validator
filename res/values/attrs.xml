@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="OkCancelBar">
+        <attr name="okLabel" format="string" localization="suggested" />
+        <attr name="cancelLabel" format="string" localization="suggested" />
+    </declare-styleable>
+</resources>
