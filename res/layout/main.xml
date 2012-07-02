@@ -3,18 +3,70 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:padding="0dp"
     >
-    <LinearLayout
-        android:orientation="vertical"
+    <ScrollView
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        >
-        <TextView
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:fillViewport="true">
+        <LinearLayout
+            android:id="@+id/contentTextFields"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Ceci est un formulaire d'exemple. Vous trouverez tous les cas possibles pour valider votre formulaire avec les outils adéquats."
-            />
-    </LinearLayout>
+            android:layout_height="wrap_content" 
+            android:orientation="vertical">
+		    <LinearLayout
+		        android:orientation="vertical"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:background="#FFD8D8D8"
+		        android:padding="5dp"
+		        >
+		        <TextView
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:drawableLeft="@drawable/ic_explain_about"
+		            android:layout_marginBottom="5dp"
+		            android:text="Ceci est un formulaire d'exemple. Vous trouverez tous les cas possibles pour valider votre formulaire avec les outils adéquats."
+		            />
+		    </LinearLayout>
+		
+		    <EditText
+		        android:id="@+id/required"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:ems="10"
+		        android:inputType="textPersonName"
+		        android:singleLine="true"
+		        android:hint="Required" >
+		        <requestFocus />
+		    </EditText>
+		
+		    <EditText
+                android:id="@+id/orrequired1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="OR Required 1"
+                android:singleLine="true"
+                android:ems="10" />>
+		    
+		    <EditText
+		        android:id="@+id/email"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:ems="10"
+		        android:hint="Or Required2 and Email Field"
+		        android:singleLine="true"
+		        android:inputType="textEmailAddress" />
 
+        </LinearLayout>
+    </ScrollView>
+    <com.throrinstudio.android.library.widgets.OkCancelBar
+        android:id="@+id/okCancelBar"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_gravity="bottom"
+        android:paddingTop="8dip"
+        android:gravity="center_horizontal" />
 </LinearLayout>
 
