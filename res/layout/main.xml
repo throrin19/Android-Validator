@@ -59,6 +59,22 @@
 		        android:singleLine="true"
 		        android:inputType="textEmailAddress" />
 
+		    <EditText
+		        android:id="@+id/password1"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:ems="10"
+		        android:hint="Password"
+		        android:inputType="textPassword" />
+
+		    <EditText
+		        android:id="@+id/password2"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:ems="10"
+		        android:hint="Confirm Password"
+		        android:inputType="textPassword" />
+
         </LinearLayout>
     </ScrollView>
     <com.throrinstudio.android.library.widgets.OkCancelBar
