@@ -27,7 +27,7 @@
 		            android:layout_height="wrap_content"
 		            android:drawableLeft="@drawable/ic_explain_about"
 		            android:layout_marginBottom="5dp"
-		            android:text="Ceci est un formulaire d'exemple. Vous trouverez tous les cas possibles pour valider votre formulaire avec les outils adéquats."
+		            android:text="This is a sample form. You will find all possible cases to validate your form with the right tools."
 		            />
 		    </LinearLayout>
 		

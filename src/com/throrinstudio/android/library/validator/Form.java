@@ -11,20 +11,31 @@ import android.widget.TextView;
  * TODO à optimiser pour gérer les checkBox et les radioButtons, 
  * tout de suite, ne marche qu'avec les EditText
  * 
- * @author WEB
+ * @author throrin19
  * 
- * @version 0.1
+ * @version 1.0
  *
  */
 public class Form {
 
 	protected ArrayList<AbstractValidate> _validates = new ArrayList<AbstractValidate>();
 	
+	/**
+	 * Fonction rajoutant des Validateurs à notre formulaire
+	 * @param validate
+	 */
 	public void addValidates(AbstractValidate validate){
 		this._validates.add(validate);
 		return;
 	}
 	
+	/**
+	 * Fonction appelée pour valider notre formulaire.
+	 * Si une erreur a été trouvée, elle sera affichée dans le champs correspondant.
+	 * @return
+	 * 		boolean : true si le formulaire est valide
+	 *                false si le formulaire est invalide
+	 */
 	public boolean validate(){
 		boolean result = true;
 		Iterator<AbstractValidate> it = this._validates.iterator();
