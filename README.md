@@ -23,6 +23,6 @@ Form Validator Library est composé de 3 membres :
 ### Validator
 
 Le validator contient pour le moment 3 règles de validation basiques :
-1.   **EmailValidator**
-2.   **NotEmptyValidator**
-3.   **UrlValidator**
++   **EmailValidator**
++   **NotEmptyValidator**
++   **UrlValidator**
