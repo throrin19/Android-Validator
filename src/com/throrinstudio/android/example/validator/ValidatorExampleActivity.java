@@ -9,10 +9,10 @@ import android.widget.Toast;
 
 import com.throrinstudio.android.common.libs.validator.Form;
 import com.throrinstudio.android.common.libs.validator.Validate;
-import com.throrinstudio.android.common.libs.validator.editText.ConfirmValidator;
-import com.throrinstudio.android.common.libs.validator.editText.EmailValidator;
-import com.throrinstudio.android.common.libs.validator.editText.NotEmptyValidator;
-import com.throrinstudio.android.common.libs.validator.editText.OrTwoFieldsEmptyValidator;
+import com.throrinstudio.android.common.libs.validator.validate.ConfirmValidate;
+import com.throrinstudio.android.common.libs.validator.validate.OrTwoRequiredValidate;
+import com.throrinstudio.android.common.libs.validator.validator.EmailValidator;
+import com.throrinstudio.android.common.libs.validator.validator.NotEmptyValidator;
 import com.throrinstudio.android.common.libs.widgets.OkCancelBar;
 
 public class ValidatorExampleActivity extends Activity
@@ -45,14 +45,14 @@ public class ValidatorExampleActivity extends Activity
         Validate requiredField = new Validate(required);
         requiredField.addValidator(new NotEmptyValidator(this));
         
-        OrTwoFieldsEmptyValidator orRequiredVal = new OrTwoFieldsEmptyValidator(orRequired1, email);
+        OrTwoRequiredValidate orRequiredVal = new OrTwoRequiredValidate(orRequired1, email);
         
         Validate emailField = new Validate(email);
         EmailValidator mailVal = new EmailValidator(this);
         mailVal.setDomainName("gmail\\.com");
         emailField.addValidator(mailVal);
         
-        ConfirmValidator confirmFields = new ConfirmValidator(password, confirmPassword);
+        ConfirmValidate confirmFields = new ConfirmValidate(password, confirmPassword);
         
         mForm.addValidates(requiredField);
         mForm.addValidates(orRequiredVal);

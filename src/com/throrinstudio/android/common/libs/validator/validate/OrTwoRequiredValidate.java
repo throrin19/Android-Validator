@@ -1,4 +1,4 @@
-package com.throrinstudio.android.common.libs.validator.editText;
+package com.throrinstudio.android.common.libs.validator.validate;
 
 import android.content.Context;
 import android.widget.TextView;
@@ -6,6 +6,7 @@ import android.widget.TextView;
 import com.throrinstudio.android.common.libs.validator.AbstractValidate;
 import com.throrinstudio.android.common.libs.validator.Validate;
 import com.throrinstudio.android.common.libs.validator.Validator;
+import com.throrinstudio.android.common.libs.validator.validator.NotEmptyValidator;
 
 /**
  * Classe validator permettant de valider si les champs 
@@ -15,13 +16,13 @@ import com.throrinstudio.android.common.libs.validator.Validator;
  * @author WEB
  *
  */
-public class OrTwoFieldsEmptyValidator extends AbstractValidate {
+public class OrTwoRequiredValidate extends AbstractValidate {
 
 	private TextView _field1;
 	private TextView _field2;
 	private Context mContext;
 	
-	public OrTwoFieldsEmptyValidator(TextView field1, TextView field2){
+	public OrTwoRequiredValidate(TextView field1, TextView field2){
 		this._field1 = field1;
 		this._field2 = field2;
 		source = _field1;

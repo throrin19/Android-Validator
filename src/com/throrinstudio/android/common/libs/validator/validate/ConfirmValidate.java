@@ -1,4 +1,4 @@
-package com.throrinstudio.android.common.libs.validator.editText;
+package com.throrinstudio.android.common.libs.validator.validate;
 
 import android.content.Context;
 import android.widget.TextView;
@@ -7,7 +7,7 @@ import com.throrinstudio.android.common.libs.validator.AbstractValidate;
 import com.throrinstudio.android.common.libs.validator.Validator;
 import com.throrinstudio.android.example.validator.R;
 
-public class ConfirmValidator extends AbstractValidate {
+public class ConfirmValidate extends AbstractValidate {
 
 	private TextView _field1;
 	private TextView _field2;
@@ -15,7 +15,7 @@ public class ConfirmValidator extends AbstractValidate {
 	private TextView source;
 	private int _errorMessage = R.string.validator_confirm;
 	
-	public ConfirmValidator(TextView field1, TextView field2){
+	public ConfirmValidate(TextView field1, TextView field2){
 		this._field1 = field1;
 		this._field2 = field2;
 		source = _field2;

@@ -1,4 +1,4 @@
-package com.throrinstudio.android.common.libs.validator.editText;
+package com.throrinstudio.android.common.libs.validator.validator;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

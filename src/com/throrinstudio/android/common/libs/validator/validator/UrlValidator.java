@@ -1,29 +1,29 @@
-package com.throrinstudio.android.common.libs.validator.editText;
+package com.throrinstudio.android.common.libs.validator.validator;
 
 import android.content.Context;
+import android.webkit.URLUtil;
 
 import com.throrinstudio.android.common.libs.validator.Validator;
 import com.throrinstudio.android.example.validator.R;
 
-public class NotEmptyValidator extends Validator {
+public class UrlValidator extends Validator {
+
+	private int mErrorMessage = R.string.validator_url;
 	
-	private int mErrorMessage = R.string.validator_empty;
-	
-	
-	public NotEmptyValidator(Context c) {
+	public UrlValidator(Context c) {
 		super(c);
 	}
 	
 	@Override
 	public boolean isValid(Object value) {
-		if(value != null){
-			CharSequence test = (CharSequence)value;
-			if(test.length() > 0)
+		String url = ((CharSequence)value).toString();
+		if(url.length() > 0){
+			if(URLUtil.isHttpUrl(url) && URLUtil.isValidUrl(url))
 				return true;
 			else
 				return false;
 		}else{
-			return false;
+			return true;
 		}
 	}
 
