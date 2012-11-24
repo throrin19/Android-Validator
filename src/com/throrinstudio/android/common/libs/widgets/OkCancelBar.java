@@ -1,4 +1,4 @@
-package com.throrinstudio.android.library.widgets;
+package com.throrinstudio.android.common.libs.widgets;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -7,7 +7,7 @@ import android.view.LayoutInflater;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
-import com.throrinstudio.android.example.R;
+import com.throrinstudio.android.example.validator.R;
 
 /**
  * Represent a bar with 2 buttons

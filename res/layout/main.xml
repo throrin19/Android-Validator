@@ -77,7 +77,7 @@
 
         </LinearLayout>
     </ScrollView>
-    <com.throrinstudio.android.library.widgets.OkCancelBar
+    <com.throrinstudio.android.common.libs.widgets.OkCancelBar
         android:id="@+id/okCancelBar"
         android:layout_width="fill_parent" 
         android:layout_height="wrap_content" 

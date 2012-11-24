@@ -1,10 +1,11 @@
-package com.throrinstudio.android.library.validator.editText;
+package com.throrinstudio.android.common.libs.validator.editText;
 
 import android.content.Context;
 import android.widget.TextView;
-import com.throrinstudio.android.library.validator.AbstractValidate;
-import com.throrinstudio.android.library.validator.Validate;
-import com.throrinstudio.android.library.validator.Validator;
+
+import com.throrinstudio.android.common.libs.validator.AbstractValidate;
+import com.throrinstudio.android.common.libs.validator.Validate;
+import com.throrinstudio.android.common.libs.validator.Validator;
 
 /**
  * Classe validator permettant de valider si les champs 

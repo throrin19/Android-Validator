@@ -1,4 +1,4 @@
-package com.throrinstudio.android.library.validator;
+package com.throrinstudio.android.common.libs.validator;
 
 import java.util.ArrayList;
 import java.util.Iterator;

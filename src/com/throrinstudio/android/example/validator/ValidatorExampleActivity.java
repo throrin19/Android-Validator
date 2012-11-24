@@ -1,12 +1,4 @@
-package com.throrinstudio.android.example;
-
-import com.throrinstudio.android.library.validator.Form;
-import com.throrinstudio.android.library.validator.Validate;
-import com.throrinstudio.android.library.validator.editText.ConfirmValidator;
-import com.throrinstudio.android.library.validator.editText.EmailValidator;
-import com.throrinstudio.android.library.validator.editText.NotEmptyValidator;
-import com.throrinstudio.android.library.validator.editText.OrTwoFieldsEmptyValidator;
-import com.throrinstudio.android.library.widgets.OkCancelBar;
+package com.throrinstudio.android.example.validator;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -14,6 +6,14 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.throrinstudio.android.common.libs.validator.Form;
+import com.throrinstudio.android.common.libs.validator.Validate;
+import com.throrinstudio.android.common.libs.validator.editText.ConfirmValidator;
+import com.throrinstudio.android.common.libs.validator.editText.EmailValidator;
+import com.throrinstudio.android.common.libs.validator.editText.NotEmptyValidator;
+import com.throrinstudio.android.common.libs.validator.editText.OrTwoFieldsEmptyValidator;
+import com.throrinstudio.android.common.libs.widgets.OkCancelBar;
 
 public class ValidatorExampleActivity extends Activity
 {

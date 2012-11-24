@@ -1,10 +1,10 @@
-package com.throrinstudio.android.library.validator.editText;
+package com.throrinstudio.android.common.libs.validator.editText;
 
 import android.content.Context;
 import android.webkit.URLUtil;
 
-import com.throrinstudio.android.example.R;
-import com.throrinstudio.android.library.validator.Validator;
+import com.throrinstudio.android.common.libs.validator.Validator;
+import com.throrinstudio.android.example.validator.R;
 
 public class UrlValidator extends Validator {
 

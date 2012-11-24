@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.throrinstudio.android.example;
+package com.throrinstudio.android.example.validator;
 
 public final class R {
     public static final class attr {
@@ -72,8 +72,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #OkCancelBar_cancelLabel com.throrinstudio.android.example:cancelLabel}</code></td><td></td></tr>
-           <tr><td><code>{@link #OkCancelBar_okLabel com.throrinstudio.android.example:okLabel}</code></td><td></td></tr>
+           <tr><td><code>{@link #OkCancelBar_cancelLabel com.throrinstudio.android.example.validator:cancelLabel}</code></td><td></td></tr>
+           <tr><td><code>{@link #OkCancelBar_okLabel com.throrinstudio.android.example.validator:okLabel}</code></td><td></td></tr>
            </table>
            @see #OkCancelBar_cancelLabel
            @see #OkCancelBar_okLabel
@@ -82,7 +82,7 @@ containing a value of this type.
             0x7f010000, 0x7f010001
         };
         /**
-          <p>This symbol is the offset where the {@link com.throrinstudio.android.example.R.attr#cancelLabel}
+          <p>This symbol is the offset where the {@link com.throrinstudio.android.example.validator.R.attr#cancelLabel}
           attribute's value can be found in the {@link #OkCancelBar} array.
 
 
@@ -96,7 +96,7 @@ containing a value of this type.
         */
         public static final int OkCancelBar_cancelLabel = 1;
         /**
-          <p>This symbol is the offset where the {@link com.throrinstudio.android.example.R.attr#okLabel}
+          <p>This symbol is the offset where the {@link com.throrinstudio.android.example.validator.R.attr#okLabel}
           attribute's value can be found in the {@link #OkCancelBar} array.
 
 

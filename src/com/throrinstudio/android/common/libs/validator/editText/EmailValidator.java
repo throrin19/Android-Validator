@@ -1,12 +1,12 @@
-package com.throrinstudio.android.library.validator.editText;
+package com.throrinstudio.android.common.libs.validator.editText;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import android.content.Context;
 
-import com.throrinstudio.android.example.R;
-import com.throrinstudio.android.library.validator.Validator;
+import com.throrinstudio.android.common.libs.validator.Validator;
+import com.throrinstudio.android.example.validator.R;
 
 public class EmailValidator extends Validator {
 
