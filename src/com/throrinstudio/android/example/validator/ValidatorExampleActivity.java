@@ -48,7 +48,9 @@ public class ValidatorExampleActivity extends Activity
         OrTwoFieldsEmptyValidator orRequiredVal = new OrTwoFieldsEmptyValidator(orRequired1, email);
         
         Validate emailField = new Validate(email);
-        emailField.addValidator(new EmailValidator(this));
+        EmailValidator mailVal = new EmailValidator(this);
+        mailVal.setDomainName("gmail\\.com");
+        emailField.addValidator(mailVal);
         
         ConfirmValidator confirmFields = new ConfirmValidator(password, confirmPassword);
         
