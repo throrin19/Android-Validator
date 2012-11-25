@@ -6,23 +6,23 @@ Form Validator Library for Android
 Presentation
 ------------
 
-Form Validator Library for Android a pour base [Zend_Validator](http://framework.zend.com/manual/1.12/en/zend.validate.introduction.html, "Title") codé en PHP. Cette library a pourbut de simplifier et alléger le code pour pouvoir valider un formulaire Android. Pour le moment, le formulaire ne peut traiter que les **EditText**. Les autres éléments verront le jour dans les prochaines versions.
+Form Validator Library for Android is based on [Zend_Validator](http://framework.zend.com/manual/1.12/en/zend.validate.introduction.html, "Title") coded in PHP. This library is intended to simplify and streamline the code to validate a form Android. For the moment, the form can just handle the **EditText**. Other elements will emerge in future versions.
 
 ### License
 
 * [Apache Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
 
-Utilisation
------------
+Use
+---
 
-Form Validator Library est composé de 3 membres : 
--   **Form :** Contient tous les validates devant êtres traiter. C'est le Form qui gère l'affichage des messages d'erreur au sein des différents éléments.
--   **Validate :** Contient tous les validators devant être traités pour un élement donné.
--   **Validator :** Permet de définir une règle de validation.
+Form Validator Library is composed of 3 members : 
+-   **Form :** Contains all beings validates to treat. This is the Form that manages the display of error messages in the various elements.
+-   **Validate :** Contains all the validators to be treated for a given element.
+-   **Validator :** Can define a validation rule.
 
 ### Validator
 
-Le validator contient pour le moment 3 règles de validation basiques :
+The validator currently contains three basic validation rules:
 +   **EmailValidator**
 +   **NotEmptyValidator**
 +   **UrlValidator**
