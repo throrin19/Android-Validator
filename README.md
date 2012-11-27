@@ -32,21 +32,24 @@ For some validators, functions can change the validation rules. The validator cu
 +   **UrlValidator** : Ensures that the field is a valid url.
 +   **Custom Validator** : You can create your own Validator. To do this, you can just create class extends Validator :
 
-    public class CustomValidator extends Validator {
+    `public class CustomValidator extends Validator 
+    {
         private int mErrorMessage = R.string.validator_custom; // Your custom error message
         public CustomValidator(Context c) {
             super(c);
         }
+        
         @Override
         public boolean isValid(Object value) {
             // Your validation Test is here.
             // Retour true if it's correct, false if it's incorrect
             return true;
         }
+        
         @Override
         public String getMessage() {
             return mContext.getString(mErrorMessage);
         }
-    }
+    }`
     
 ### Validate
