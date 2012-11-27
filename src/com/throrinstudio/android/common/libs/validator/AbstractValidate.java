@@ -7,9 +7,9 @@ public abstract class AbstractValidate {
 	/**
 	 * Permet d'ajouter un nouveau Validator pour le champs rattaché
 	 * @param validator
-	 * 		{@link Validator} : Le validator à rattacher
+	 * 		{@link AbstractValidator} : Le validator à rattacher
 	 */
-	public abstract void addValidator(Validator validator);
+	public abstract void addValidator(AbstractValidator validator);
 	
 	/**
 	 * Fonction appelée lors de la validation {@link Form}

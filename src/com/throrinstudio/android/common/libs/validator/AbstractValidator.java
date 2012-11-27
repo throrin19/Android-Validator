@@ -7,11 +7,11 @@ import android.content.Context;
  * @author throrin19
  *
  */
-public abstract class Validator {
+public abstract class AbstractValidator {
 
 	protected Context mContext;
 	
-	public Validator(Context c){
+	public AbstractValidator(Context c){
 		mContext = c;
 	}
 	

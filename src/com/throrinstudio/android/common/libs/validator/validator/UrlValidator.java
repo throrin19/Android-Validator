@@ -3,10 +3,10 @@ package com.throrinstudio.android.common.libs.validator.validator;
 import android.content.Context;
 import android.webkit.URLUtil;
 
-import com.throrinstudio.android.common.libs.validator.Validator;
+import com.throrinstudio.android.common.libs.validator.AbstractValidator;
 import com.throrinstudio.android.example.validator.R;
 
-public class UrlValidator extends Validator {
+public class UrlValidator extends AbstractValidator {
 
 	private int mErrorMessage = R.string.validator_url;
 	

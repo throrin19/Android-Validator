@@ -11,7 +11,7 @@ public class Validate extends AbstractValidate{
 	/**
      * Validator chain
      */
-    protected ArrayList<Validator> _validators = new ArrayList<Validator>();
+    protected ArrayList<AbstractValidator> _validators = new ArrayList<AbstractValidator>();
     
     /**
      * Array of validation failure messages
@@ -34,9 +34,9 @@ public class Validate extends AbstractValidate{
      * If $breakChainOnFailure is true, then if the validator fails, the next validator in the chain,
      * if one exists, will not be executed.
      *
-     * @param Validator 
+     * @param AbstractValidator 
      */
-    public void addValidator(Validator validator)
+    public void addValidator(AbstractValidator validator)
     {
     	this._validators.add(validator);
     	return;
@@ -46,9 +46,9 @@ public class Validate extends AbstractValidate{
     	boolean result = true;
     	this._message = new String();
     	
-    	Iterator<Validator> it = this._validators.iterator();
+    	Iterator<AbstractValidator> it = this._validators.iterator();
     	while(it.hasNext()){
-    		Validator validator = it.next();
+    		AbstractValidator validator = it.next();
     		if(!validator.isValid(value)){
     			this._message = validator.getMessage();
     			result = false;

@@ -2,10 +2,10 @@ package com.throrinstudio.android.common.libs.validator.validator;
 
 import android.content.Context;
 
-import com.throrinstudio.android.common.libs.validator.Validator;
+import com.throrinstudio.android.common.libs.validator.AbstractValidator;
 import com.throrinstudio.android.example.validator.R;
 
-public class NotEmptyValidator extends Validator {
+public class NotEmptyValidator extends AbstractValidator {
 	
 	private int mErrorMessage = R.string.validator_empty;
 	

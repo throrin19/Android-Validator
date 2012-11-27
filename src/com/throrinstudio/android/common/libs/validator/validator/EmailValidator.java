@@ -5,10 +5,10 @@ import java.util.regex.Pattern;
 
 import android.content.Context;
 
-import com.throrinstudio.android.common.libs.validator.Validator;
+import com.throrinstudio.android.common.libs.validator.AbstractValidator;
 import com.throrinstudio.android.example.validator.R;
 
-public class EmailValidator extends Validator {
+public class EmailValidator extends AbstractValidator {
 
 	private int mErrorMessage = R.string.validator_email;
 	

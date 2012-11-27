@@ -5,7 +5,7 @@ import android.widget.TextView;
 
 import com.throrinstudio.android.common.libs.validator.AbstractValidate;
 import com.throrinstudio.android.common.libs.validator.Validate;
-import com.throrinstudio.android.common.libs.validator.Validator;
+import com.throrinstudio.android.common.libs.validator.AbstractValidator;
 import com.throrinstudio.android.common.libs.validator.validator.NotEmptyValidator;
 
 /**
@@ -59,7 +59,7 @@ public class OrTwoRequiredValidate extends AbstractValidate {
 
 
 	@Override
-	public void addValidator(Validator validator) {
+	public void addValidator(AbstractValidator validator) {
 	}
 
 	@Override
