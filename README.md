@@ -22,7 +22,10 @@ Form Validator Library is composed of 3 members :
 
 ### Validator
 
-The validator currently contains three basic validation rules:
+The validator is basic class for this library. It contains specific validation rules. To instanciate validator, you just have to do this (EmailValidator for example):
+    new EmailValidator(context);
+
+For some validators, functions can change the validation rules. The validator currently contains three basic validation rules:
 +   **EmailValidator**
 +   **NotEmptyValidator**
 +   **UrlValidator**
