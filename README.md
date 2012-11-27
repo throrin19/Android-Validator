@@ -27,6 +27,6 @@ The validator is basic class for this library. It contains specific validation r
     new EmailValidator(context);
 
 For some validators, functions can change the validation rules. The validator currently contains three basic validation rules:
-+   **EmailValidator**
-+   **NotEmptyValidator**
-+   **UrlValidator**
++   **EmailValidator** : Ensures that the field does contain a email address. You can also define a regex to check for a particular domain name with the function `setDomainName(DomainRegexp)`. Example for **gmail.com** domain : `setDomainName("gmail\\.com")`. 
++   **NotEmptyValidator** : Ensures that the field is not empty.
++   **UrlValidator** : Ensures that the field is a valid url.
