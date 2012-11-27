@@ -54,3 +54,16 @@ For some validators, functions can change the validation rules. The validator cu
         }
     
 ### Validate
+
+The pure Validate class is a FIFO validator. It's test a list of AbstractValidator for specific EditText. For some special cases, Validate is not enough. This is why there are specific validates. This is why there are two individuals with a Validate operation different from that base :
++   **ConfirmValidate** : Can check whether a value is identical between the two fields. Can be used to confirm the entry of a password.
++   **OrTwoRequiredValidate** : If one of the two target fields has a value, then it is valid. Can be used if a user must give his phone **or** fax.
+
+### Form
+
+### Changelog
+
++   **0.1** : Create library
++   **0.2** : Add ConfirmValidate and OrTwoRequiredValidate
++   **0.3** : Extends EmailValidator with `setDomainName()`
++   **0.4** : Replace Validator by AbstractValidator

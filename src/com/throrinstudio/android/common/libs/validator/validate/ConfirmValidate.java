@@ -21,14 +21,9 @@ public class ConfirmValidate extends AbstractValidate {
 		source = _field2;
 		mContext = field1.getContext();
 	}
-	
-	
 
 	@Override
 	public boolean isValid(Object value) {
-		
-		
-		
 		if(_field1.getText().toString().length() > 0 && _field1.getText().toString().equals(_field2.getText().toString())){
 			return true;
 		}else{
