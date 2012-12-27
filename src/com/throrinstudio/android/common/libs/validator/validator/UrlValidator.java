@@ -18,7 +18,7 @@ public class UrlValidator extends AbstractValidator {
 	public boolean isValid(Object value) {
 		String url = ((CharSequence)value).toString();
 		if(url.length() > 0){
-			if(URLUtil.isHttpUrl(url) && URLUtil.isValidUrl(url))
+			if(URLUtil.isValidUrl(url))
 				return true;
 			else
 				return false;
