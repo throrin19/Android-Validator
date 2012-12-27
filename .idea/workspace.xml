@@ -24,20 +24,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b32f771-e6e9-4f3b-806d-9ad702300fcf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Android-Validator.iml" afterPath="$PROJECT_DIR$/Android-Validator.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/com/throrinstudio/android/example/validator/R.java" afterPath="$PROJECT_DIR$/gen/com/throrinstudio/android/example/validator/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Android-Validator.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1356610716260" ignored="false" />
+    <file path="/Dummy.txt" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1356612289985" ignored="false" />
     <file path="/fragment.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1356359592460" ignored="false" />
     <file path="/ValidatorExampleActivity.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1356608324398" ignored="false" />
     <file path="/main.xml" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1356608137441" ignored="false" />
-    <file path="/README.md" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1356612134690" ignored="false" />
+    <file path="/README.md" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1356613017056" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +95,16 @@
       <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="3" selection-start="3502" selection-end="3502" vertical-scroll-proportion="0.6873563">
+            <state line="94" column="1" selection-start="4134" selection-end="4134" vertical-scroll-proportion="0.6873563">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Form.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/Form.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="13" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -108,7 +113,7 @@
       <file leaf-file-name="ValidatorExampleActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/throrinstudio/android/example/validator/ValidatorExampleActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="8" selection-start="2213" selection-end="2246" vertical-scroll-proportion="0.0">
+            <state line="65" column="49" selection-start="2464" selection-end="2666" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -263,36 +268,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="validator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Android-Validator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Android-Validator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="validator" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -563,7 +538,11 @@
       <created>1356610738256</created>
       <updated>1356610738256</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Avancement de la documentation">
+      <created>1356612293745</created>
+      <updated>1356612293745</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -635,7 +614,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correction d'un bug sur UrlValidator&#10;Ajout de l'exemple urlValidator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Avancement de la documentation" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -651,6 +630,7 @@
     <MESSAGE value="Init Project" />
     <MESSAGE value="Ajout deu début de library Validator" />
     <MESSAGE value="Correction d'un bug sur UrlValidator&#10;Ajout de l'exemple urlValidator" />
+    <MESSAGE value="Avancement de la documentation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -704,11 +684,6 @@
         <state line="13" column="48" selection-start="595" selection-end="595" vertical-scroll-proportion="0.25028312" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/Form.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="13" selection-start="373" selection-end="373" vertical-scroll-proportion="0.21242937" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -754,9 +729,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/Form.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="13" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/throrinstudio/android/example/validator/ValidatorExampleActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="8" selection-start="2213" selection-end="2246" vertical-scroll-proportion="0.0">
+        <state line="65" column="49" selection-start="2464" selection-end="2666" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -765,7 +747,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="3" selection-start="3502" selection-end="3502" vertical-scroll-proportion="0.6873563">
+        <state line="94" column="1" selection-start="4134" selection-end="4134" vertical-scroll-proportion="0.6873563">
           <folding />
         </state>
       </provider>
