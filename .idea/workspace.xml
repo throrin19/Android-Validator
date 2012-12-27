@@ -29,11 +29,11 @@
     </list>
     <ignored path="Android-Validator.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1356612289985" ignored="false" />
+    <file path="/Dummy.txt" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1356613042444" ignored="false" />
     <file path="/fragment.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1356359592460" ignored="false" />
     <file path="/ValidatorExampleActivity.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1356608324398" ignored="false" />
     <file path="/main.xml" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1356608137441" ignored="false" />
-    <file path="/README.md" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1356613017056" ignored="false" />
+    <file path="/README.md" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1356613079747" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +95,7 @@
       <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="1" selection-start="4134" selection-end="4134" vertical-scroll-proportion="0.6873563">
+            <state line="82" column="7" selection-start="3887" selection-end="3887" vertical-scroll-proportion="0.45287356">
               <folding />
             </state>
           </provider>
@@ -542,7 +542,11 @@
       <created>1356612293745</created>
       <updated>1356612293745</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Avancement de la documentation">
+      <created>1356613045745</created>
+      <updated>1356613045745</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -747,7 +751,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="1" selection-start="4134" selection-end="4134" vertical-scroll-proportion="0.6873563">
+        <state line="82" column="7" selection-start="3887" selection-end="3887" vertical-scroll-proportion="0.45287356">
           <folding />
         </state>
       </provider>

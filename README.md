@@ -80,7 +80,7 @@ emailField.addValidator(new EmailValidator(mContext));
 The Form class is the class teacher of the whole Library. It is this which manages the processing of each Validate, Validator and displays the error on the EditText automatically. The Form class stores a Validate stack and then you just have to run the validation with the `validate()` function.
 To instanciate Form and add Validates, you have to do this :
 ``` java
-Form form = new Form();
+Form mForm = new Form();
 mForm.addValidates(emailField);
 mForm.addValidates(confirmFields);
 mForm.addValidates(urlField);
