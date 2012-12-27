@@ -24,7 +24,9 @@ Form Validator Library is composed of 3 members :
 
 The validator is basic class for this library. It contains specific validation rules. To instanciate validator, you just have to do this (EmailValidator for example):
 
-    new EmailValidator(context);
+``` java
+new EmailValidator(context);
+```
 
 For some validators, functions can change the validation rules. The validator currently contains three basic validation rules:
 +   **EmailValidator** : Ensures that the field does contain a email address. You can also define a regex to check for a particular domain name with the function `setDomainName(DomainRegexp)`. Example for **gmail.com** domain : `setDomainName("gmail\\.com")`. 
@@ -32,32 +34,46 @@ For some validators, functions can change the validation rules. The validator cu
 +   **UrlValidator** : Ensures that the field is a valid url.
 +   **Custom Validator** : You can create your own Validator. To do this, you can just create class extends AbstractValidator :
 
-        public class CustomValidator extends AbstractValidator 
-        {
-            private int mErrorMessage = R.string.validator_custom; // Your custom error message
-            
-            public CustomValidator(Context c) {
-                super(c);
-            }
-            
-            @Override
-            public boolean isValid(Object value) {
-                // Your validation Test is here.
-                // Retour true if it's correct, false if it's incorrect
-                return true;
-            }
-            
-            @Override
-            public String getMessage() {
-                return mContext.getString(mErrorMessage);
-            }
-        }
+``` java
+public class CustomValidator extends AbstractValidator
+{
+    private int mErrorMessage = R.string.validator_custom; // Your custom error message
+
+    public CustomValidator(Context c) {
+        super(c);
+    }
+
+    @Override
+    public boolean isValid(Object value) {
+        // Your validation Test is here.
+        // Retour true if it's correct, false if it's incorrect
+        return true;
+    }
+
+    @Override
+    public String getMessage() {
+        return mContext.getString(mErrorMessage);
+    }
+}
+```
     
 ### Validate
 
 The pure Validate class is a FIFO validator. It's test a list of AbstractValidator for specific EditText. For some special cases, Validate is not enough. This is why there are specific validates. This is why there are two individuals with a Validate operation different from that base :
 +   **ConfirmValidate** : Can check whether a value is identical between the two fields. Can be used to confirm the entry of a password.
 +   **OrTwoRequiredValidate** : If one of the two target fields has a value, then it is valid. Can be used if a user must give his phone **or** fax.
++   **Validate** : The base Validate. It creates his validators stack.
+
+Basicly, Validate can only handle a single EditText. If you want to manage several at the same time, see if **ConfirmValidate ** or **OrTwoRequiredValidate ** match your problem. If this is not the case, you may need to create your own Validate. To instantiate a Validate, you just have to do this:
+``` java
+Validate emailField = new Validate(email);
+```
+
+And to add Validator stack, for example to add a required Email field, you have to do this:
+``` java
+emailField.addValidator(new NotEmptyValidator(mContext));
+emailField.addValidator(new EmailValidator(mContext));
+```
 
 ### Form
 
