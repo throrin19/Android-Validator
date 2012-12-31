@@ -4,4 +4,7 @@
     <string name="validator_empty">You must complete this field.</string>
     <string name="validator_url">The URL entered is incorrect.</string>
     <string name="validator_confirm">The confirm field is not valid.</string>
+    <string name="validator_alnum">The value has not only alnum characters</string>
+    <string name="validator_hex">The value has not only hexadecimal digit characters</string>
+    <string name="validator_regexp">The value does not match against pattern.</string>
 </resources>

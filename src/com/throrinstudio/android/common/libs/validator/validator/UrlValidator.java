@@ -7,7 +7,6 @@ import com.throrinstudio.android.common.libs.validator.AbstractValidator;
 import com.throrinstudio.android.example.validator.R;
 
 public class UrlValidator extends AbstractValidator {
-
 	private int mErrorMessage = R.string.validator_url;
 	
 	public UrlValidator(Context c) {

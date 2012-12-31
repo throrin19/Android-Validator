@@ -27,14 +27,14 @@ public class Validate extends AbstractValidate{
     public Validate(TextView source){
     	this._source = source;
     }
-    
+
     /**
      * Adds a validator to the end of the chain
      *
      * If $breakChainOnFailure is true, then if the validator fails, the next validator in the chain,
      * if one exists, will not be executed.
      *
-     * @param AbstractValidator 
+     * @param validator
      */
     public void addValidator(AbstractValidator validator)
     {
@@ -49,11 +49,19 @@ public class Validate extends AbstractValidate{
     	Iterator<AbstractValidator> it = this._validators.iterator();
     	while(it.hasNext()){
     		AbstractValidator validator = it.next();
-    		if(!validator.isValid(value)){
-    			this._message = validator.getMessage();
-    			result = false;
-    			break;
-    		}
+            try{
+                if(!validator.isValid(value)){
+                    this._message = validator.getMessage();
+                    result = false;
+                    break;
+                }
+            }catch(ValidatorException e){
+                System.err.println(e.getMessage());
+                System.err.println(e.getStackTrace());
+                this._message = e.getMessage();
+                result = false;
+                break;
+            }
     	}
     	
     	return result;

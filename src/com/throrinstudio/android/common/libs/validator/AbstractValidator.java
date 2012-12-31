@@ -22,7 +22,7 @@ public abstract class AbstractValidator {
 	 * @return
 	 * 		boolean : true si valide, false sinon.
 	 */
-	public abstract boolean isValid(Object value);
+	public abstract boolean isValid(Object value) throws ValidatorException;
 	
 	/**
 	 * Permet de récupérer le message d'erreur correspondant au validateur.

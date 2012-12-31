@@ -12,6 +12,11 @@ Form Validator Library for Android is based on [Zend_Validator](http://framework
 
 * [Apache Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
 
+Warning
+-------
+
+With Android 4.2, the error display has undergone a display bug. Sometimes, the error fields do not appear in the display. I hope that Google will repair this problem quickly due to Android in itself and not the library.
+
 Use
 ---
 
@@ -32,6 +37,9 @@ For some validators, functions can change the validation rules. The validator cu
 +   **EmailValidator** : Ensures that the field does contain a email address. You can also define a regex to check for a particular domain name with the function `setDomainName(DomainRegexp)`. Example for **gmail.com** domain : `setDomainName("gmail\\.com")`. 
 +   **NotEmptyValidator** : Ensures that the field is not empty.
 +   **UrlValidator** : Ensures that the field is a valid url.
++   **AlnumValidator** : Ensure that the feld has Alnum characters.
++   **HexValidator** : Ensure that the field has Hex characters.
++   **RegExpPattern** : Ensure that the field does match setted Pattern.
 +   **Custom Validator** : You can create your own Validator. To do this, you can just create class extends AbstractValidator :
 
 ``` java
@@ -102,3 +110,4 @@ if(mForm.validate()){
 +   **0.3** : Extends EmailValidator with `setDomainName()`
 +   **0.4** : Replace Validator by AbstractValidator
 +   **0.5** : Fix bug in UrlValidator
++   **1.0** : Add AlnumValidator, HexValidator, RegExpValidator, ValidatorException. Fix Validate class.
