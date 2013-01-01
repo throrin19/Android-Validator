@@ -5,33 +5,33 @@ import android.widget.TextView;
 public abstract class AbstractValidate {
 
 	/**
-	 * Permet d'ajouter un nouveau Validator pour le champs rattaché
+	 * Add a new validator for fields attached
 	 * @param validator
-	 * 		{@link AbstractValidator} : Le validator à rattacher
+	 * 		{@link AbstractValidator} : The validator to attach
 	 */
 	public abstract void addValidator(AbstractValidator validator);
 	
 	/**
-	 * Fonction appelée lors de la validation {@link Form}
+	 * Function called when the {@link Form} validation
 	 * @param value
-	 * 		{@link Object} : valeur à valider
+	 * 		{@link Object} : value to validate
 	 * @return
-	 * 		true si tous les validateurs sont valides
-	 *      false si un des validateurs est invalide
+	 * 		true if all validators are valid
+     *      false if a validator is invalid
 	 */
 	public abstract boolean isValid(Object value);
 	
 	/**
-	 * Retourne le message d'erreur à afficher sur l'élément rattaché
+	 * Returns the error message displayed on the connected component
 	 * @return
-	 * 		{@link String} : le message � afficher
+	 * 		{@link String} : the message to display
 	 */
 	public abstract String getMessages();
 	
 	/**
-	 * Fonction récupérant le champs rattaché à notre validateur
+	 * Function recovering the field attached to our validator
 	 * @return
-	 * 		{@link TextView} : Le champs rattaché
+	 * 		{@link TextView} : The fields attached
 	 */
 	public abstract TextView getSource();
 }

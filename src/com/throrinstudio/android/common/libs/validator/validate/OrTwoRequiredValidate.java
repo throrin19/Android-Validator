@@ -9,11 +9,10 @@ import com.throrinstudio.android.common.libs.validator.AbstractValidator;
 import com.throrinstudio.android.common.libs.validator.validator.NotEmptyValidator;
 
 /**
- * Classe validator permettant de valider si les champs 
- * de 2 fields sont empty ou pas.
- * Si l'un des deux est null, pas d'erreur.
- * Si les deux sont nulls : erreur
- * @author WEB
+ * Validator class to validate if the fields are empty fields of 2 or not.
+ * If one of them is null, no error.
+ * If both are nulls: Error
+ * @author throrin19
  *
  */
 public class OrTwoRequiredValidate extends AbstractValidate {
@@ -35,7 +34,6 @@ public class OrTwoRequiredValidate extends AbstractValidate {
 
 	@Override
 	public boolean isValid(Object value) {
-		//ici la value, on s'en tape
 		Validate field1Validator = new Validate(_field1);
 		field1Validator.addValidator(new NotEmptyValidator(mContext));
 		

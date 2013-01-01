@@ -6,13 +6,7 @@ import com.throrinstudio.android.example.validator.R;
 
 import java.util.regex.Pattern;
 
-/**
- * Created with IntelliJ IDEA.
- * User: throrin19
- * Date: 31/12/12
- * Time: 14:12
- * To change this template use File | Settings | File Templates.
- */
+
 public class HexValidator extends AbstractValidator {
 
     /**

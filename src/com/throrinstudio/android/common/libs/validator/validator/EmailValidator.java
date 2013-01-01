@@ -69,9 +69,9 @@ public class EmailValidator extends AbstractValidator {
 	}
 	
 	/**
-	 * Permet de dire que l'adresse email doit être de tel domaine pour être valide.
-	 * Cette fonction n'accepte que les chaines de Regexp
-	 * @param name nom de domaine
+	 * Lets say that the email address must be valid for such domain.
+     * This function only accepts strings of Regexp
+	 * @param name Regexp Domain Name
 	 * 
 	 * example : gmail.com
 	 */

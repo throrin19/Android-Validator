@@ -14,7 +14,7 @@ public class Validate extends AbstractValidate{
     protected ArrayList<AbstractValidator> _validators = new ArrayList<AbstractValidator>();
     
     /**
-     * Array of validation failure messages
+     * Validation failure messages
      */
     protected String _message = new String();
     
@@ -30,9 +30,6 @@ public class Validate extends AbstractValidate{
 
     /**
      * Adds a validator to the end of the chain
-     *
-     * If $breakChainOnFailure is true, then if the validator fails, the next validator in the chain,
-     * if one exists, will not be executed.
      *
      * @param validator
      */

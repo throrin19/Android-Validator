@@ -6,10 +6,9 @@ import java.util.Iterator;
 import android.widget.TextView;
 
 /**
- * Classe de validation de formulaire
- * 
- * TODO à optimiser pour gérer les checkBox et les radioButtons, 
- * tout de suite, ne marche qu'avec les EditText
+ * Form Validation Class
+ *
+ * Immediately, only works with EditText
  * 
  * @author throrin19
  * 
@@ -21,8 +20,9 @@ public class Form {
 	protected ArrayList<AbstractValidate> _validates = new ArrayList<AbstractValidate>();
 	
 	/**
-	 * Fonction rajoutant des Validateurs à notre formulaire
+	 * Function adding Validates to our form
 	 * @param validate
+     *   {@link AbstractValidate} Validate to add
 	 */
 	public void addValidates(AbstractValidate validate){
 		this._validates.add(validate);
@@ -30,11 +30,11 @@ public class Form {
 	}
 	
 	/**
-	 * Fonction appelée pour valider notre formulaire.
-	 * Si une erreur a été trouvée, elle sera affichée dans le champs correspondant.
+	 * Called to validate our form.
+     * If an error is found, it will be displayed in the corresponding field.
 	 * @return
-	 * 		boolean : true si le formulaire est valide
-	 *                false si le formulaire est invalide
+	 * 		boolean :   true if the form is valid
+     *                  false if the form is invalid
 	 */
 	public boolean validate(){
 		boolean result = true;

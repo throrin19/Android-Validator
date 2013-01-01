@@ -7,12 +7,8 @@ import com.throrinstudio.android.example.validator.R;
 import java.util.regex.Pattern;
 
 /**
- * Created with IntelliJ IDEA.
- * User: throrin19
- * Date: 31/12/12
- *
- * Validateur permettant de vérifier si un champs contient bien seulement et uniquement des chiffres et des lettres.
- * Permet d'éviter d'avoir des caractères spéciaux comme les accents.
+ * Validator to check if a field contains only numbers and letters.
+ * Avoids having special characters like accents.
  */
 public class AlnumValidator extends AbstractValidator{
 

@@ -3,7 +3,7 @@ package com.throrinstudio.android.common.libs.validator;
 import android.content.Context;
 
 /**
- * Classe servant à créer de nouveaux Validators
+ * Class for creating new Validators
  * @author throrin19
  *
  */
@@ -16,18 +16,18 @@ public abstract class AbstractValidator {
 	}
 	
 	/**
-	 * Permet de vérifier si la valeur passée en paramètre est valide ou non.
+	 * Can check if the value passed in parameter is valid or not.
 	 * @param value
-	 * 		{@link Object} : la valeur à valider
+	 * 		{@link Object} : the value to validate
 	 * @return
-	 * 		boolean : true si valide, false sinon.
+	 * 		boolean : true if valid, false otherwise.
 	 */
 	public abstract boolean isValid(Object value) throws ValidatorException;
 	
 	/**
-	 * Permet de récupérer le message d'erreur correspondant au validateur.
+	 * Used to retrieve the error message corresponding to the validator.
 	 * @return
-	 * 		String : le message d'erreur
+	 * 		String : the error message
 	 */
 	public abstract String getMessage();
 }

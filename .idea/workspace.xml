@@ -23,21 +23,22 @@
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b32f771-e6e9-4f3b-806d-9ad702300fcf" name="Default" comment="Ajout de 3 validators + d'une exception.&#10;Réglage de divers bugs minimes">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/AlnumValidator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/HexValidator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/RegExpValidator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/ValidatorException.java" />
+    <list default="true" id="8b32f771-e6e9-4f3b-806d-9ad702300fcf" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/AbstractValidate.java" afterPath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/AbstractValidate.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/AbstractValidator.java" afterPath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/AbstractValidator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/UrlValidator.java" afterPath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/UrlValidator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/AlnumValidator.java" afterPath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/AlnumValidator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/EmailValidator.java" afterPath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/EmailValidator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/Form.java" afterPath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/Form.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/HexValidator.java" afterPath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/HexValidator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validate/OrTwoRequiredValidate.java" afterPath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validate/OrTwoRequiredValidate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/RegExpValidator.java" afterPath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/RegExpValidator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/Validate.java" afterPath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/Validate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/validator_strings.xml" afterPath="$PROJECT_DIR$/res/values/validator_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/ValidatorException.java" afterPath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/ValidatorException.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Android-Validator.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1356960967282" ignored="false" />
+    <file path="/Dummy.txt" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357055185046" ignored="false" />
     <file path="/fragment.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1356359592460" ignored="false" />
     <file path="/ValidatorExampleActivity.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1356608324398" ignored="false" />
     <file path="/main.xml" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1356608137441" ignored="false" />
@@ -46,9 +47,13 @@
     <file path="/AlnumValidator.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1356959151038" ignored="false" />
     <file path="/validator_strings.xml" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1356960801981" ignored="false" />
     <file path="/HexValidator.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1356959575831" ignored="false" />
-    <file path="/RegExpValidator.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1356960788254" ignored="false" />
+    <file path="/RegExpValidator.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357055745124" ignored="false" />
     <file path="/Exception.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1356960372499" ignored="false" />
-    <file path="/Validate.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1356960672408" ignored="false" />
+    <file path="/Validate.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357057023138" ignored="false" />
+    <file path="/EmailValidator.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357056031315" ignored="false" />
+    <file path="/AbstractValidate.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357056421090" ignored="false" />
+    <file path="/Form.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357056928501" ignored="false" />
+    <file path="/OrTwoRequiredValidate.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357057172941" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,33 +112,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
+      <file leaf-file-name="OrTwoRequiredValidate.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validate/OrTwoRequiredValidate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="51" selection-start="789" selection-end="789" vertical-scroll-proportion="0.3908046">
+            <state line="14" column="20" selection-start="593" selection-end="593" vertical-scroll-proportion="0.15367232">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AlnumValidator.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/AlnumValidator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="33" selection-start="591" selection-end="591" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegExpValidator.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/RegExpValidator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="57" selection-start="701" selection-end="701" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -156,22 +139,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/throrinstudio/android/library/validator/editText/UrlValidator.java" />
-        <option value="$PROJECT_DIR$/res/values/attrs.xml" />
-        <option value="$PROJECT_DIR$/res/layout/widget_ok_cancel_bar.xml" />
-        <option value="$PROJECT_DIR$/src/com/throrinstudio/android/library/widgets/OkCancelBar.java" />
-        <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/res/layout/main.xml" />
         <option value="$PROJECT_DIR$/src/com/throrinstudio/android/example/validator/ValidatorExampleActivity.java" />
         <option value="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/UrlValidator.java" />
-        <option value="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/AlnumValidator.java" />
-        <option value="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/HexValidator.java" />
         <option value="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/Exception.java" />
-        <option value="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/ValidatorException.java" />
-        <option value="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/Validate.java" />
-        <option value="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/RegExpValidator.java" />
         <option value="$PROJECT_DIR$/res/values/validator_strings.xml" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/RegExpValidator.java" />
+        <option value="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/AlnumValidator.java" />
+        <option value="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/EmailValidator.java" />
+        <option value="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/HexValidator.java" />
+        <option value="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/AbstractValidate.java" />
+        <option value="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/AbstractValidator.java" />
+        <option value="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/Form.java" />
+        <option value="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/Validate.java" />
+        <option value="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/ValidatorException.java" />
+        <option value="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validate/OrTwoRequiredValidate.java" />
       </list>
     </option>
   </component>
@@ -321,7 +304,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="validator" />
+              <option name="myItemId" value="validate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -393,8 +376,8 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -436,19 +419,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -474,6 +444,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -600,7 +583,11 @@
       <created>1356613100480</created>
       <updated>1356613100480</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Ajout de 3 validators + d'une exception.&#10;Réglage de divers bugs minimes">
+      <created>1356961140104</created>
+      <updated>1356961140104</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -620,7 +607,7 @@
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2022412" sideWeight="0.6710671" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2022412" sideWeight="0.6710671" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893288" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
@@ -672,7 +659,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Avancement de la documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout de 3 validators + d'une exception.&#10;Réglage de divers bugs minimes" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -689,6 +676,7 @@
     <MESSAGE value="Ajout deu début de library Validator" />
     <MESSAGE value="Correction d'un bug sur UrlValidator&#10;Ajout de l'exemple urlValidator" />
     <MESSAGE value="Avancement de la documentation" />
+    <MESSAGE value="Ajout de 3 validators + d'une exception.&#10;Réglage de divers bugs minimes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -698,91 +686,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="58" selection-start="2918" selection-end="2918" vertical-scroll-proportion="-12.02">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/throrinstudio/android/example/validator/ValidatorExampleActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="9" selection-start="1815" selection-end="1815" vertical-scroll-proportion="0.2700565">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/Form.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="13" selection-start="373" selection-end="373" vertical-scroll-proportion="0.21242937">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/UrlValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="53" selection-start="314" selection-end="314" vertical-scroll-proportion="0.07683616">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Android/SDK/sources/android-17/android/webkit/URLUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="19" selection-start="891" selection-end="891" vertical-scroll-proportion="0.11525424">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="48" selection-start="595" selection-end="595" vertical-scroll-proportion="0.25697675">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/NotEmptyValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="56" selection-start="269" selection-end="286" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/EmailValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="113" selection-start="743" selection-end="743" vertical-scroll-proportion="0.46101695">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/HexValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="65" selection-start="730" selection-end="730" vertical-scroll-proportion="0.48022598">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/ValidatorException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="29" selection-start="782" selection-end="782" vertical-scroll-proportion="0.6545866">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/Validate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="24" selection-start="820" selection-end="820" vertical-scroll-proportion="0.07587769">
           <folding />
         </state>
       </provider>
@@ -794,27 +700,104 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="0" selection-start="4325" selection-end="4580" vertical-scroll-proportion="0.56666666">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/RegExpValidator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="57" selection-start="701" selection-end="701" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="14" column="0" selection-start="459" selection-end="459" vertical-scroll-proportion="0.17288135">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/UrlValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="53" selection-start="314" selection-end="314" vertical-scroll-proportion="0.07683616">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/AlnumValidator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="33" selection-start="591" selection-end="591" vertical-scroll-proportion="0.0">
+        <state line="25" column="67" selection-start="722" selection-end="722" vertical-scroll-proportion="0.40338984">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/EmailValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="51" selection-start="1795" selection-end="1795" vertical-scroll-proportion="1.2677966">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/HexValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="262" selection-end="262" vertical-scroll-proportion="0.15367232">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/NotEmptyValidator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="51" selection-start="789" selection-end="789" vertical-scroll-proportion="0.3908046">
+        <state line="7" column="56" selection-start="269" selection-end="286" vertical-scroll-proportion="0.07683616">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/AbstractValidate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="50" selection-start="896" selection-end="896" vertical-scroll-proportion="0.6338983">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/AbstractValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="19" selection-start="179" selection-end="179" vertical-scroll-proportion="0.17288135">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/Form.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="121" selection-start="498" selection-end="498" vertical-scroll-proportion="0.32768363">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/Validate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="71" selection-start="201" selection-end="201" vertical-scroll-proportion="-0.3638418">
+          <folding>
+            <element signature="e#303#322#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/ValidatorException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="57" selection-end="57" vertical-scroll-proportion="0.01920904">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validate/ConfirmValidate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="347" selection-end="347" vertical-scroll-proportion="0.058757063">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validate/OrTwoRequiredValidate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="20" selection-start="593" selection-end="593" vertical-scroll-proportion="0.15367232">
           <folding />
         </state>
       </provider>

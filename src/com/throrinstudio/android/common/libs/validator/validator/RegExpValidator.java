@@ -8,17 +8,11 @@ import com.throrinstudio.android.example.validator.R;
 import java.util.regex.Pattern;
 
 /**
- * Created with IntelliJ IDEA.
- * User: throrin19
- * Date: 31/12/12
- * Time: 14:21
- * To change this template use File | Settings | File Templates.
+ * This validator test value with custom Regex Pattern.
  */
 public class RegExpValidator extends AbstractValidator {
 
-    /**
-     * This si Alnum Pattern to verify value.
-     */
+
     private Pattern mPattern;
 
     private int mErrorMessage = R.string.validator_regexp;
