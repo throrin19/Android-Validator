@@ -25,9 +25,7 @@ public class AlnumValidator extends AbstractValidator{
 
     @Override
     public boolean isValid(Object value) {
-        if(value != null){
-            value = "";
-        }
+        value = value.toString();
 
         return mPattern.matcher((String)value).matches();
     }

@@ -24,28 +24,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b32f771-e6e9-4f3b-806d-9ad702300fcf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/AbstractValidate.java" afterPath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/AbstractValidate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/AbstractValidator.java" afterPath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/AbstractValidator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/AlnumValidator.java" afterPath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/AlnumValidator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/EmailValidator.java" afterPath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/EmailValidator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/Form.java" afterPath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/Form.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/com/throrinstudio/android/example/validator/BuildConfig.java" afterPath="$PROJECT_DIR$/gen/com/throrinstudio/android/example/validator/BuildConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/HexValidator.java" afterPath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/HexValidator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validate/OrTwoRequiredValidate.java" afterPath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validate/OrTwoRequiredValidate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/com/throrinstudio/android/example/validator/R.java" afterPath="$PROJECT_DIR$/gen/com/throrinstudio/android/example/validator/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/RegExpValidator.java" afterPath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/RegExpValidator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/Validate.java" afterPath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/Validate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/ValidatorException.java" afterPath="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/ValidatorException.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Android-Validator.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357055185046" ignored="false" />
-    <file path="/fragment.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1356359592460" ignored="false" />
+    <file path="/Dummy.txt" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357311407851" ignored="false" />
+    <file path="/fragment.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357291642192" ignored="false" />
     <file path="/ValidatorExampleActivity.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1356608324398" ignored="false" />
     <file path="/main.xml" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1356608137441" ignored="false" />
     <file path="/README.md" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1356960988519" ignored="false" />
     <file path="/UrlValidator.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1356958329461" ignored="false" />
-    <file path="/AlnumValidator.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1356959151038" ignored="false" />
-    <file path="/validator_strings.xml" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1356960801981" ignored="false" />
+    <file path="/AlnumValidator.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357311490967" ignored="false" />
+    <file path="/validator_strings.xml" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357291162862" ignored="false" />
     <file path="/HexValidator.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1356959575831" ignored="false" />
     <file path="/RegExpValidator.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357055745124" ignored="false" />
     <file path="/Exception.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1356960372499" ignored="false" />
@@ -54,6 +49,43 @@
     <file path="/AbstractValidate.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357056421090" ignored="false" />
     <file path="/Form.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357056928501" ignored="false" />
     <file path="/OrTwoRequiredValidate.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357057172941" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoomeoEvents/branches/xiti/src/validator/validator/NotEmptyValidator.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357290811080" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoomeoEvents/branches/xiti/src/validator/Form.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357290811080" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoomeoEvents/branches/xiti/src/validator/validator/HexValidator.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357290810225" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoomeoEvents/branches/xiti/src/validator/validator/UrlValidator.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357291271011" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoomeoEvents/branches/xiti/src/validator/validator/AlnumValidator.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357290810225" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoomeoEvents/branches/xiti/src/validator/validator/RegExpValidator.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357290810225" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoomeoEvents/branches/xiti/src/validator/validator/EmailValidator.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357290811080" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoomeoEvents/branches/xiti/src/validator/AbstractValidate.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357290810225" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoomeoEvents/branches/xiti/src/validator/validate/OrTwoRequiredValidate.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357290811080" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoomeoEvents/branches/xiti/src/validator/Validate.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357290811080" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoomeoEvents/branches/xiti/src/validator/AbstractValidator.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357290810225" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoomeoEvents/branches/xiti/src/validator/validate/ConfirmValidate.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357290811080" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoomeoEvents/branches/xiti/src/validator/ValidatorException.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357290810225" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoomeoEvents/branches/xiti/res/values/strings.xml" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357290905800" ignored="false" />
+    <file path="/strings.xml" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357290897475" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoomeoEvents/branches/xiti/res/values/validator_strings.xml" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357291197141" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoomeoEvents/branches/xiti/res/values-fr/validator_strings.xml" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357291207351" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoomeoEvents/branches/xiti/src/com/throrinstudio/android/common/libs/validator/ValidatorException.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357291367543" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoomeoEvents/branches/xiti/src/com/throrinstudio/android/common/libs/validator/validator/RegExpValidator.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357291447852" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoomeoEvents/branches/xiti/src/com/throrinstudio/android/common/libs/validator/AbstractValidate.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357291379692" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoomeoEvents/branches/xiti/src/com/throrinstudio/android/common/libs/validator/validator/AlnumValidator.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357291398741" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoomeoEvents/branches/xiti/src/com/throrinstudio/android/common/libs/validator/validator/EmailValidator.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357291386590" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoomeoEvents/branches/xiti/src/com/throrinstudio/android/common/libs/validator/validator/NotEmptyValidator.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357291426732" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoomeoEvents/branches/xiti/src/com/throrinstudio/android/common/libs/validator/Validate.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357291368352" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoomeoEvents/branches/xiti/src/com/throrinstudio/android/common/libs/validator/validate/OrTwoRequiredValidate.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357291368352" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoomeoEvents/branches/xiti/src/com/throrinstudio/android/common/libs/validator/Form.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357291368352" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoomeoEvents/branches/xiti/src/com/throrinstudio/android/common/libs/validator/validate/ConfirmValidate.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357291560987" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoomeoEvents/branches/xiti/src/com/throrinstudio/android/common/libs/validator/validator/UrlValidator.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357291459036" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoomeoEvents/branches/xiti/src/com/throrinstudio/android/common/libs/validator/validator/HexValidator.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357291410293" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoomeoEvents/branches/xiti/src/com/goomeoevents/modules/myvisit/cards/CardShowFragment.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357291597413" ignored="false" />
+    <file path="/CardShowFragment.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357291594933" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoomeoEvents/branches/xiti/src/com/goomeoevents/modules/networking/login/fragments/NetworkingConnectionTwoFragment.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357291665754" ignored="false" />
+    <file path="/NetworkingConnectionTwoFragment.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357291660916" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoomeoEvents/branches/xiti/src/com/goomeoevents/modules/myagenda/login/MyAgendaLoginFragment.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357291695356" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoomeoEvents/branches/xiti/src/com/goomeoevents/modules/myvisit/report/MyReportFragment.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357291720866" ignored="false" />
+    <file path="$PROJECT_DIR$/../GoomeoEvents/branches/xiti/src/com/goomeoevents/modules/myvisit/cards/CardFormFragment.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357291753546" ignored="false" />
+    <file path="/CardFormFragment.java" changelist="8b32f771-e6e9-4f3b-806d-9ad702300fcf" time="1357291748316" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,17 +143,7 @@
     <favorites_list name="Android-Validator" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="OrTwoRequiredValidate.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validate/OrTwoRequiredValidate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="20" selection-start="593" selection-end="593" vertical-scroll-proportion="0.15367232">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -145,16 +167,16 @@
         <option value="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/Exception.java" />
         <option value="$PROJECT_DIR$/res/values/validator_strings.xml" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/RegExpValidator.java" />
-        <option value="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/AlnumValidator.java" />
         <option value="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/EmailValidator.java" />
-        <option value="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/HexValidator.java" />
         <option value="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/AbstractValidate.java" />
         <option value="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/AbstractValidator.java" />
         <option value="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/Form.java" />
         <option value="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/Validate.java" />
         <option value="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/ValidatorException.java" />
         <option value="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validate/OrTwoRequiredValidate.java" />
+        <option value="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/AlnumValidator.java" />
+        <option value="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/HexValidator.java" />
+        <option value="$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/RegExpValidator.java" />
       </list>
     </option>
   </component>
@@ -190,6 +212,20 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Android-Validator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Android-Validator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -225,10 +261,6 @@
               <option name="myItemId" value="android" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="validator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -304,7 +336,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="validate" />
+              <option name="myItemId" value="validator" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -343,20 +375,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Android-Validator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Android-Validator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -376,8 +394,8 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -419,6 +437,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -444,19 +475,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -702,53 +720,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="0" selection-start="4325" selection-end="4580" vertical-scroll-proportion="0.56666666">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/RegExpValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="459" selection-end="459" vertical-scroll-proportion="0.17288135">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/UrlValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="53" selection-start="314" selection-end="314" vertical-scroll-proportion="0.07683616">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/AlnumValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="67" selection-start="722" selection-end="722" vertical-scroll-proportion="0.40338984">
-          <folding />
-        </state>
+        <state line="90" column="0" selection-start="4325" selection-end="4580" vertical-scroll-proportion="0.56666666" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/EmailValidator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="51" selection-start="1795" selection-end="1795" vertical-scroll-proportion="1.2677966">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/HexValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="262" selection-end="262" vertical-scroll-proportion="0.15367232">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/NotEmptyValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="56" selection-start="269" selection-end="286" vertical-scroll-proportion="0.07683616">
-          <folding />
-        </state>
+        <state line="72" column="51" selection-start="1795" selection-end="1795" vertical-scroll-proportion="1.2677966" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/AbstractValidate.java">
@@ -790,14 +767,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validate/ConfirmValidate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="347" selection-end="347" vertical-scroll-proportion="0.058757063">
-          <folding />
-        </state>
+        <state line="9" column="13" selection-start="347" selection-end="347" vertical-scroll-proportion="0.058757063" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validate/OrTwoRequiredValidate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="20" selection-start="593" selection-end="593" vertical-scroll-proportion="0.15367232">
+        <state line="51" column="66" selection-start="1479" selection-end="1479" vertical-scroll-proportion="0.86636466">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/UrlValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="21" selection-start="487" selection-end="520" vertical-scroll-proportion="0.25028312">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/AlnumValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="8" selection-start="774" selection-end="799" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/RegExpValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="33" selection-start="828" selection-end="828" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/HexValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="33" selection-start="673" selection-end="673" vertical-scroll-proportion="0.38505095">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/throrinstudio/android/common/libs/validator/validator/NotEmptyValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="56" selection-start="269" selection-end="286" vertical-scroll-proportion="0.07701019">
           <folding />
         </state>
       </provider>

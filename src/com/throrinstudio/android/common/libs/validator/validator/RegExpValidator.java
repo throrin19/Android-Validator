@@ -27,9 +27,7 @@ public class RegExpValidator extends AbstractValidator {
 
     @Override
     public boolean isValid(Object value) throws ValidatorException {
-        if(value != null){
-            value = "";
-        }
+        value = value.toString();
 
         if(mPattern != null){
             return mPattern.matcher((String)value).matches();
