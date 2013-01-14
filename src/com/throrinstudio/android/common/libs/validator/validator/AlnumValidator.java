@@ -24,10 +24,8 @@ public class AlnumValidator extends AbstractValidator{
     }
 
     @Override
-    public boolean isValid(Object value) {
-        value = value.toString();
-
-        return mPattern.matcher((String)value).matches();
+    public boolean isValid(String value) {
+        return mPattern.matcher(value).matches();
     }
 
     @Override

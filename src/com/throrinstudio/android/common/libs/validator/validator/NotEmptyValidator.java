@@ -15,10 +15,9 @@ public class NotEmptyValidator extends AbstractValidator {
 	}
 	
 	@Override
-	public boolean isValid(Object value) {
+	public boolean isValid(String value) {
 		if(value != null){
-			CharSequence test = (CharSequence)value;
-			if(test.length() > 0)
+			if(value.length() > 0)
 				return true;
 			else
 				return false;

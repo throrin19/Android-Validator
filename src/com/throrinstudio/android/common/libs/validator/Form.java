@@ -43,7 +43,7 @@ public class Form {
 			AbstractValidate validator = it.next();
 			TextView field = validator.getSource();
 			field.setError(null);
-			if(!validator.isValid(field.getText())){
+			if(!validator.isValid(field.getText().toString())){
 				result = false;
 				field.setError(validator.getMessages());
 			}

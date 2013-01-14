@@ -20,9 +20,7 @@ public class EmailValidator extends AbstractValidator {
 	}
 	
 	@Override
-	public boolean isValid(Object value) {
-		CharSequence charseq = (CharSequence) value;
-		
+	public boolean isValid(String charseq) {
 		if(charseq.length() > 0 ){
 			boolean matchFound = false;
 			

@@ -14,8 +14,7 @@ public class UrlValidator extends AbstractValidator {
 	}
 	
 	@Override
-	public boolean isValid(Object value) {
-		String url = ((CharSequence)value).toString();
+	public boolean isValid(String url) {
 		if(url.length() > 0){
 			if(URLUtil.isValidUrl(url))
 				return true;

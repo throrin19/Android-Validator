@@ -26,11 +26,9 @@ public class RegExpValidator extends AbstractValidator {
     }
 
     @Override
-    public boolean isValid(Object value) throws ValidatorException {
-        value = value.toString();
-
+    public boolean isValid(String value) throws ValidatorException {
         if(mPattern != null){
-            return mPattern.matcher((String)value).matches();
+            return mPattern.matcher(value).matches();
         }else{
             throw new ValidatorException("You can set Regexp Pattern first");
         }

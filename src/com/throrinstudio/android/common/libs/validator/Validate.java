@@ -39,7 +39,7 @@ public class Validate extends AbstractValidate{
     	return;
     }
     
-    public boolean isValid(Object value){
+    public boolean isValid(String value){
     	boolean result = true;
     	this._message = new String();
     	

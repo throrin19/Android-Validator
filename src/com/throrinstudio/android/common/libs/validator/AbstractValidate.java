@@ -14,12 +14,12 @@ public abstract class AbstractValidate {
 	/**
 	 * Function called when the {@link Form} validation
 	 * @param value
-	 * 		{@link Object} : value to validate
+	 * 		{@link String} : value to validate
 	 * @return
 	 * 		true if all validators are valid
      *      false if a validator is invalid
 	 */
-	public abstract boolean isValid(Object value);
+	public abstract boolean isValid(String value);
 	
 	/**
 	 * Returns the error message displayed on the connected component
