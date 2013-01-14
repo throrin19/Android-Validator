@@ -33,5 +33,5 @@ proguard-project.txt
 # Mac specific
 .DS_Store
 
-# User specific
-local.properties
+# And specific
+ant.properties
