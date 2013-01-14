@@ -23,6 +23,7 @@ local.properties
 # IntelliJ IDEA project files
 .idea
 *.iml
+*.eml
 classes
 
 # Command line
