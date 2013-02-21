@@ -33,14 +33,14 @@ public class OrTwoRequiredValidate extends AbstractValidate {
 	private String _errorMessage;
 
 	@Override
-	public boolean isValid(Object value) {
+	public boolean isValid(String value) {
 		Validate field1Validator = new Validate(_field1);
 		field1Validator.addValidator(new NotEmptyValidator(mContext));
 		
 		Validate field2Validator = new Validate(_field2);
 		field2Validator.addValidator(new NotEmptyValidator(mContext));
 		
-		if(field1Validator.isValid(_field1.getText()) || field2Validator.isValid(_field2.getText())){
+		if(field1Validator.isValid(_field1.getText().toString()) || field2Validator.isValid(_field2.getText().toString())){
 			return true;
 		}else{
 			_errorMessage = field1Validator.getMessages();
