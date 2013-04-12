@@ -1,0 +1,62 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>android-validator</groupId>
+	<artifactId>android-validator</artifactId>
+	<version>1.0</version>
+	<packaging>apklib</packaging>
+
+	<name>Android-Validator</name>
+	
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+		<!-- Plugins -->
+		<android-maven-plugin.version>3.5.0</android-maven-plugin.version>
+		<maven-compiler-plugin.version>2.3.2</maven-compiler-plugin.version>
+		<api.platform>16</api.platform>
+
+		<!-- Dependencies -->
+		<android.version>4.1.1.4</android.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.google.android</groupId>
+			<artifactId>android</artifactId>
+			<scope>provided</scope>
+			<version>${android.version}</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+	    <sourceDirectory>src</sourceDirectory>
+	    
+		<plugins>
+			<plugin>
+				<groupId>com.jayway.maven.plugins.android.generation2</groupId>
+				<artifactId>android-maven-plugin</artifactId>
+				<version>${android-maven-plugin.version}</version>
+				<extensions>true</extensions>
+				<configuration>
+					<sdk>
+						<platform>${api.platform}</platform>
+					</sdk>
+					<!-- Proguard is not skipped by default -->
+					<proguard>
+						<skip>true</skip>
+					</proguard>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven-compiler-plugin.version}</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
