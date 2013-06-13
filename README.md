@@ -40,7 +40,7 @@ For some validators, functions can change the validation rules. The validator cu
 +   **AlnumValidator** : Ensure that the feld has Alnum characters.
 +   **HexValidator** : Ensure that the field has Hex characters.
 +   **RegExpPattern** : Ensure that the field does match setted Pattern.
-+   **PhoneValidator* : Ensure that the field is a valid phone number.
++   **PhoneValidator** : Ensure that the field is a valid phone number.
 +   **Custom Validator** : You can create your own Validator. To do this, you can just create class extends AbstractValidator :
 
 ``` java
