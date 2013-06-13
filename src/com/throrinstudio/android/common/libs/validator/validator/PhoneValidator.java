@@ -1,12 +1,13 @@
 package com.throrinstudio.android.common.libs.validator.validator;
 
+import java.util.regex.Pattern;
+
 import android.content.Context;
 import android.util.Patterns;
+
 import com.throrinstudio.android.common.libs.validator.AbstractValidator;
 import com.throrinstudio.android.common.libs.validator.ValidatorException;
 import com.throrinstudio.android.example.validator.R;
-
-import java.util.regex.Pattern;
 
 /**
  * Validator to check if Phone number is correct.
@@ -20,6 +21,11 @@ public class PhoneValidator extends AbstractValidator{
 
     public PhoneValidator(Context c) {
         super(c);
+    }
+
+    public PhoneValidator(Context c, int errorMessage) {
+        super(c);
+        mErrorMessage = errorMessage;
     }
 
     @Override
