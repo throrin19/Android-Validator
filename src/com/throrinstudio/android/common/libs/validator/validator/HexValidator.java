@@ -1,10 +1,11 @@
 package com.throrinstudio.android.common.libs.validator.validator;
 
+import java.util.regex.Pattern;
+
 import android.content.Context;
+
 import com.throrinstudio.android.common.libs.validator.AbstractValidator;
 import com.throrinstudio.android.example.validator.R;
-
-import java.util.regex.Pattern;
 
 
 public class HexValidator extends AbstractValidator {
@@ -18,6 +19,11 @@ public class HexValidator extends AbstractValidator {
 
     public HexValidator(Context c) {
         super(c);
+    }
+
+    public HexValidator(Context c, int errorMessage) {
+        super(c);
+        mErrorMessage = errorMessage;
     }
 
     @Override

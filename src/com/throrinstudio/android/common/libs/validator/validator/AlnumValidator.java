@@ -1,10 +1,11 @@
 package com.throrinstudio.android.common.libs.validator.validator;
 
+import java.util.regex.Pattern;
+
 import android.content.Context;
+
 import com.throrinstudio.android.common.libs.validator.AbstractValidator;
 import com.throrinstudio.android.example.validator.R;
-
-import java.util.regex.Pattern;
 
 /**
  * Validator to check if a field contains only numbers and letters.
@@ -21,6 +22,11 @@ public class AlnumValidator extends AbstractValidator{
 
     public AlnumValidator(Context c) {
         super(c);
+    }
+
+    public AlnumValidator(Context c, int errorMessage) {
+        super(c);
+        mErrorMessage = errorMessage;
     }
 
     @Override
