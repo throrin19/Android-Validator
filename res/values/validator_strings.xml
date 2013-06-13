@@ -7,4 +7,5 @@
     <string name="validator_alnum">The value has not only alnum characters</string>
     <string name="validator_hex">The value has not only hexadecimal digit characters</string>
     <string name="validator_regexp">The value does not match against pattern.</string>
+    <string name="validator_phone">Phone number is not in a valid format</string>
 </resources>
