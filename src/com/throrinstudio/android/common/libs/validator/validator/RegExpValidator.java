@@ -31,6 +31,10 @@ public class RegExpValidator extends AbstractValidator {
         mPattern = Pattern.compile(pattern);
     }
 
+    public void setPattern(Pattern pattern) {
+        mPattern = pattern;
+    }
+
     @Override
     public boolean isValid(String value) throws ValidatorException {
         if(mPattern != null){
