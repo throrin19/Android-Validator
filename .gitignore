@@ -9,32 +9,32 @@
 *.class
 
 # generated files
-bin/
-gen/
+library/in/
+library/gen/
 
 # Local configuration file (sdk path, etc)
-local.properties
+library/local.properties
 
 # Eclipse project files
-.classpath
-.project
-.settings
+library/.classpath
+library/.project
+library/.settings
 
 # IntelliJ IDEA project files
-.idea
+library/.idea
 *.iml
 *.eml
-classes
+library/classes
 
 # Command line
-build.xml
-proguard-project.txt
+library/build.xml
+library/proguard-project.txt
 
 # Mac specific
 .DS_Store
 
 # And specific
-ant.properties
+library/ant.properties
 
-target
-build
+library/target
+library/build
