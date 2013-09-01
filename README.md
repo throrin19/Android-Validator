@@ -17,6 +17,14 @@ Requirement
 
 +   Android 2.2+
 
+Organization
+------------
+
++    **demo**     application demo folder (coming soon)
++    **library**  library project directory
++    **others**   Others Resources directory (icon, sreenshots, ...)
++    **test**     Unit Test Directory (coming soon)
+
 Use
 ---
 
@@ -113,3 +121,4 @@ if(mForm.validate()){
 +   **0.5** : Fix bug in UrlValidator
 +   **1.0** : Add AlnumValidator, HexValidator, RegExpValidator, ValidatorException. Fix Validate class.
 +   **1.1** : Go to Android 2.2 for android.util.Patterns. Add PhoneValidator. Edit UrlValidator.
++   **1.5** : Project reorganization, graddle and maven support
