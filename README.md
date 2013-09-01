@@ -25,6 +25,17 @@ Organization
 +    **others**   Others Resources directory (icon, sreenshots, ...)
 +    **test**     Unit Test Directory (coming soon)
 
+Import in your Project
+----------------------
+
+### Graddle Project
+
+Comming Soon
+
+### Maven Project
+
+Comming Soon
+
 Use
 ---
 
