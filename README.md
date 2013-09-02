@@ -20,10 +20,10 @@ Requirement
 Organization
 ------------
 
-+    **demo**     application demo folder (coming soon)
-+    **library**  library project directory
-+    **others**   Others Resources directory (icon, sreenshots, ...)
-+    **test**     Unit Test Directory (coming soon)
++    **demo**           application demo folder (coming soon)
++    **library**        library project directory
++    **others**         Others Resources directory (icon, sreenshots, ...)
++    **library/tests**  Unit Test Directory (coming soon)
 
 Import in your Project
 ----------------------
@@ -40,8 +40,8 @@ Use
 ---
 
 Form Validator Library is composed of 3 members : 
--   **Form :** Contains all beings validates to treat. This is the Form that manages the display of error messages in the various elements.
--   **Validate :** Contains all the validators to be treated for a given element.
+-   **Form :**      Contains all beings validates to treat. This is the Form that manages the display of error messages in the various elements.
+-   **Validate :**  Contains all the validators to be treated for a given element.
 -   **Validator :** Can define a validation rule.
 
 ### Validator
@@ -53,14 +53,14 @@ new EmailValidator(context);
 ```
 
 For some validators, functions can change the validation rules. The validator currently contains three basic validation rules:
-+   **EmailValidator** : Ensures that the field does contain a email address. You can also define a regex to check for a particular domain name with the function `setDomainName(DomainRegexp)`. Example for **gmail.com** domain : `setDomainName("gmail\\.com")`. 
++   **EmailValidator** :    Ensures that the field does contain a email address. You can also define a regex to check for a particular domain name with the function `setDomainName(DomainRegexp)`. Example for **gmail.com** domain : `setDomainName("gmail\\.com")`. 
 +   **NotEmptyValidator** : Ensures that the field is not empty.
-+   **UrlValidator** : Ensures that the field is a valid url.
-+   **AlnumValidator** : Ensure that the feld has Alnum characters.
-+   **HexValidator** : Ensure that the field has Hex characters.
-+   **RegExpPattern** : Ensure that the field does match setted Pattern.
-+   **PhoneValidator** : Ensure that the field is a valid phone number.
-+   **Custom Validator** : You can create your own Validator. To do this, you can just create class extends AbstractValidator :
++   **UrlValidator** :      Ensures that the field is a valid url.
++   **AlnumValidator** :    Ensure that the feld has Alnum characters.
++   **HexValidator** :      Ensure that the field has Hex characters.
++   **RegExpPattern** :     Ensure that the field does match setted Pattern.
++   **PhoneValidator** :    Ensure that the field is a valid phone number.
++   **Custom Validator** :  You can create your own Validator. To do this, you can just create class extends AbstractValidator :
 
 ``` java
 public class CustomValidator extends AbstractValidator
