@@ -133,3 +133,7 @@ if(mForm.validate()){
 +   **1.0** : Add AlnumValidator, HexValidator, RegExpValidator, ValidatorException. Fix Validate class.
 +   **1.1** : Go to Android 2.2 for android.util.Patterns. Add PhoneValidator. Edit UrlValidator.
 +   **1.5** : Project reorganization, graddle and maven support
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/throrin19/android-validator/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
