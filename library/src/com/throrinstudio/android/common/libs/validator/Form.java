@@ -40,12 +40,8 @@ public class Form {
 		boolean result = true;
 		Iterator<AbstractValidate> it = this._validates.iterator();
 		while(it.hasNext()){
-			AbstractValidate validator = it.next();
-			TextView field = validator.getSource();
-			field.setError(null);
-			if(!validator.isValid(field.getText().toString())){
-				result = false;
-				field.setError(validator.getMessages());
+			AbstractValidate validate = it.next();
+			result = validate.isValid();
 			}
 		}
 		return result;
