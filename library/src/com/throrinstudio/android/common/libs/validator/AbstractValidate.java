@@ -26,6 +26,21 @@ public abstract class AbstractValidate {
 	 * @return
 	 * 		{@link String} : the message to display
 	 */
+	
+	/** Set error in getSource 
+	 * @return
+	 *   true if all validators are valid
+     	 *   false if a validator is invalid
+	 */
+	public final boolean isValid(){
+	        boolean valid = isValid(getSource().getText().toString());
+	        if(valid)
+	            getSource().setError(null);
+	        else
+	            getSource().setError(getMessages());
+	        return valid;
+    	}
+    	
 	public abstract String getMessages();
 	
 	/**
