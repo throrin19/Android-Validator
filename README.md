@@ -123,6 +123,24 @@ if(mForm.validate()){
 }
 ```
 
+## Contrbute
+
++   Fork the repo
++   create a branch
+    ```
+    git checkout -b my_branch
+    ```
++   Add your changes
++   Commit your changes:
+    ```
+    git commit -am "Added some awesome stuff"
+    ```
++   Push your branch:
+    ```
+    git push origin my_branch
+    ```
++   Make a pull request to `development` branch
+
 ### Changelog
 
 +   **0.1** : Create library
