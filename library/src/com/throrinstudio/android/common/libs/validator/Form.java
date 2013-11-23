@@ -42,7 +42,6 @@ public class Form {
 		while(it.hasNext()){
 			AbstractValidate validate = it.next();
 			result = validate.isValid();
-			}
 		}
 		return result;
 	}
