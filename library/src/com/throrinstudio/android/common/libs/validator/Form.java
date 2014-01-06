@@ -36,13 +36,20 @@ public class Form {
 	 * 		boolean :   true if the form is valid
      *                  false if the form is invalid
 	 */
-	public boolean validate(){
-		boolean result = true;
-		Iterator<AbstractValidate> it = this._validates.iterator();
-		while(it.hasNext()){
-			AbstractValidate validate = it.next();
-			result = validate.isValid();
-		}
-		return result;
-	}
+    public boolean validate(){
+        boolean result = true;
+        int validator = 0;
+        Iterator<AbstractValidate> it = this._validates.iterator();
+        while(it.hasNext()){
+            AbstractValidate validate = it.next();
+            result = validate.isValid();
+            if (!result){
+                validator++;
+            }
+        }
+        if (validator > 0){
+            result = false;
+        }
+        return result;
+    }
 }
