@@ -3,6 +3,8 @@ Android-Validator
 
 Form Validator Library for Android
 
+[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=throrin19&url=https://github.com/throrin19/Android-Validator/&title=Android Validator&language=Java&tags=github&category=software)
+
 Presentation
 ------------
 
