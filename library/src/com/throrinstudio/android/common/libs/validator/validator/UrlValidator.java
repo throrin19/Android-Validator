@@ -10,27 +10,19 @@ import com.throrinstudio.android.example.validator.R;
 
 public class UrlValidator extends AbstractValidator {
 
-    private static Pattern mPattern = Patterns.WEB_URL;
+    private static final Pattern WEB_URL_PATTERN = Patterns.WEB_URL;
+    private static final int DEFAULT_ERROR_MESSAGE_RESOURCE = R.string.validator_url;
 
-	private int mErrorMessage = R.string.validator_url;
-
-	public UrlValidator(Context c) {
-		super(c);
-	}
-
-    public UrlValidator(Context c, int errorMessage) {
-        super(c);
-        mErrorMessage = errorMessage;
+    public UrlValidator(Context c) {
+        super(c, DEFAULT_ERROR_MESSAGE_RESOURCE);
     }
 
-	@Override
-	public boolean isValid(String url) {
-		return mPattern.matcher(url).matches();
-	}
+    public UrlValidator(Context c, int errorMessageRes) {
+        super(c, errorMessageRes);
+    }
 
-	@Override
-	public String getMessage() {
-		return mContext.getString(mErrorMessage);
-	}
-
+    @Override
+    public boolean isValid(String url) {
+        return WEB_URL_PATTERN.matcher(url).matches();
+    }
 }
