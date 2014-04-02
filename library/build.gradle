@@ -1,16 +1,18 @@
 buildscript {
     repositories {
         mavenCentral()
+        mavenLocal()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:0.5.+'
+        classpath 'com.android.tools.build:gradle:0.9.+'
     }
 }
+
 apply plugin: 'android-library'
 
 android {
-    compileSdkVersion 17
-    buildToolsVersion "17.0.0"
+    compileSdkVersion 19
+    buildToolsVersion "19.0.1"
 
     sourceSets {
         main {
@@ -29,6 +31,6 @@ android {
     }
 
     dependencies {
-        compile 'com.android.support:support-v4:13.0.0'
+        compile 'com.android.support:support-v4:19.0.+'
     }
 }
