@@ -1,7 +1,6 @@
 package com.throrinstudio.android.common.libs.validator;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 import android.widget.TextView;
@@ -25,9 +24,7 @@ public class Validate extends BaseValidate {
     }
 
     public boolean isValid() {
-        Iterator<BaseValidator> it = mValidators.iterator();
-        while (it.hasNext()) {
-            BaseValidator validator = it.next();
+        for (BaseValidator validator : mValidators) {
             try {
                 if (!validator.isValid(mSourceView.getText().toString())) {
                     mSourceView.setError(validator.getMessage());

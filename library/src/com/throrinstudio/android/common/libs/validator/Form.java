@@ -1,7 +1,6 @@
 package com.throrinstudio.android.common.libs.validator;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -33,9 +32,7 @@ public class Form {
      */
     public boolean validate() {
         boolean formValid = true;
-        Iterator<BaseValidate> it = mValidates.iterator();
-        while (it.hasNext()) {
-            BaseValidate validate = it.next();
+        for (BaseValidate validate : mValidates) {
             // Form is invalid if only one of the validates is false (alternation rule)
             formValid = formValid || validate.isValid();
         }
