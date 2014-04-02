@@ -2,73 +2,49 @@ package com.throrinstudio.android.common.libs.validator;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 import android.widget.TextView;
 
 public class Validate extends BaseValidate {
 
-	/**
-     * Validator chain
-     */
-    protected ArrayList<BaseValidator> _validators = new ArrayList<BaseValidator>();
-    
-    /**
-     * Validation failure messages
-     */
-    protected String _message = new String();
-    
-    /**
-     * 
-     */
-    protected TextView _source;
-    
-    
-    public Validate(TextView source){
-    	this._source = source;
+    private List<BaseValidator> mValidators = new ArrayList<BaseValidator>();
+    private TextView mSourceView;
+
+    public Validate(TextView sourceView) {
+        mSourceView = sourceView;
     }
 
     /**
-     * Adds a validator to the end of the chain
+     * Add a new validator for fields attached
      *
-     * @param validator
+     * @param validator {@link BaseValidator} : The validator to attach
      */
-    public void addValidator(BaseValidator validator)
-    {
-    	this._validators.add(validator);
-    	return;
+    public void addValidator(BaseValidator validator) {
+        mValidators.add(validator);
     }
-    
-    public boolean isValid(String value){
-    	boolean result = true;
-    	this._message = new String();
-    	
-    	Iterator<BaseValidator> it = this._validators.iterator();
-    	while(it.hasNext()){
-    		BaseValidator validator = it.next();
-            try{
-                if(!validator.isValid(value)){
-                    this._message = validator.getMessage();
-                    result = false;
-                    break;
+
+    public boolean isValid() {
+        Iterator<BaseValidator> it = mValidators.iterator();
+        while (it.hasNext()) {
+            BaseValidator validator = it.next();
+            try {
+                if (!validator.isValid(mSourceView.getText().toString())) {
+                    mSourceView.setError(validator.getMessage());
+                    return false;
                 }
-            }catch(ValidatorException e){
-                System.err.println(e.getMessage());
-                System.err.println(e.getStackTrace());
-                this._message = e.getMessage();
-                result = false;
-                break;
+            } catch (ValidatorException e) {
+                e.printStackTrace();
+                mSourceView.setError(e.getMessage());
+                return false;
             }
-    	}
-    	
-    	return result;
+        }
+        mSourceView.setError(null);
+        return true;
     }
-    
-    public String getMessages(){
-    	return this._message;
+
+    public TextView getSource() {
+        return mSourceView;
     }
-    
-    public TextView getSource(){
-    	return this._source;
-    }
-    
+
 }
