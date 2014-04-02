@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 import android.content.Context;
 import android.util.Patterns;
 
-import com.throrinstudio.android.common.libs.validator.AbstractValidator;
+import com.throrinstudio.android.common.libs.validator.BaseValidator;
 import com.throrinstudio.android.common.libs.validator.ValidatorException;
 import com.throrinstudio.android.example.validator.R;
 
@@ -13,7 +13,7 @@ import com.throrinstudio.android.example.validator.R;
  * Validator to check if Phone number is correct.
  * Created by throrin19 on 13/06/13.
  */
-public class PhoneValidator extends AbstractValidator {
+public class PhoneValidator extends BaseValidator {
 
     private static final Pattern PHONE_PATTERN = Patterns.PHONE;
     private static final int DEFAULT_ERROR_MESSAGE_RESOURCE = R.string.validator_phone;

@@ -5,13 +5,12 @@ import java.util.Iterator;
 
 import android.widget.TextView;
 
-
-public class Validate extends AbstractValidate{
+public class Validate extends BaseValidate {
 
 	/**
      * Validator chain
      */
-    protected ArrayList<AbstractValidator> _validators = new ArrayList<AbstractValidator>();
+    protected ArrayList<BaseValidator> _validators = new ArrayList<BaseValidator>();
     
     /**
      * Validation failure messages
@@ -33,7 +32,7 @@ public class Validate extends AbstractValidate{
      *
      * @param validator
      */
-    public void addValidator(AbstractValidator validator)
+    public void addValidator(BaseValidator validator)
     {
     	this._validators.add(validator);
     	return;
@@ -43,9 +42,9 @@ public class Validate extends AbstractValidate{
     	boolean result = true;
     	this._message = new String();
     	
-    	Iterator<AbstractValidator> it = this._validators.iterator();
+    	Iterator<BaseValidator> it = this._validators.iterator();
     	while(it.hasNext()){
-    		AbstractValidator validator = it.next();
+    		BaseValidator validator = it.next();
             try{
                 if(!validator.isValid(value)){
                     this._message = validator.getMessage();

@@ -6,10 +6,10 @@ import java.util.regex.Pattern;
 import android.content.Context;
 import android.text.TextUtils;
 
-import com.throrinstudio.android.common.libs.validator.AbstractValidator;
+import com.throrinstudio.android.common.libs.validator.BaseValidator;
 import com.throrinstudio.android.example.validator.R;
 
-public class EmailValidator extends AbstractValidator {
+public class EmailValidator extends BaseValidator {
 
     private static final int DEFAULT_ERROR_MESSAGE_RESOURCE = R.string.validator_email;
     private String mDomainName = "";

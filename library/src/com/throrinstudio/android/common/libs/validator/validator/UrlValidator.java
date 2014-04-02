@@ -5,10 +5,10 @@ import java.util.regex.Pattern;
 import android.content.Context;
 import android.util.Patterns;
 
-import com.throrinstudio.android.common.libs.validator.AbstractValidator;
+import com.throrinstudio.android.common.libs.validator.BaseValidator;
 import com.throrinstudio.android.example.validator.R;
 
-public class UrlValidator extends AbstractValidator {
+public class UrlValidator extends BaseValidator {
 
     private static final Pattern WEB_URL_PATTERN = Patterns.WEB_URL;
     private static final int DEFAULT_ERROR_MESSAGE_RESOURCE = R.string.validator_url;

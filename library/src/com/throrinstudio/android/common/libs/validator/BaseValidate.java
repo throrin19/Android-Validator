@@ -2,14 +2,14 @@ package com.throrinstudio.android.common.libs.validator;
 
 import android.widget.TextView;
 
-public abstract class AbstractValidate {
+public abstract class BaseValidate {
 
 	/**
 	 * Add a new validator for fields attached
 	 * @param validator
-	 * 		{@link AbstractValidator} : The validator to attach
+	 * 		{@link BaseValidator} : The validator to attach
 	 */
-	public abstract void addValidator(AbstractValidator validator);
+	public abstract void addValidator(BaseValidator validator);
 	
 	/**
 	 * Function called when the {@link Form} validation

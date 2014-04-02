@@ -3,11 +3,11 @@ package com.throrinstudio.android.common.libs.validator.validate;
 import android.content.Context;
 import android.widget.TextView;
 
-import com.throrinstudio.android.common.libs.validator.AbstractValidate;
-import com.throrinstudio.android.common.libs.validator.AbstractValidator;
+import com.throrinstudio.android.common.libs.validator.BaseValidate;
+import com.throrinstudio.android.common.libs.validator.BaseValidator;
 import com.throrinstudio.android.example.validator.R;
 
-public class ConfirmValidate extends AbstractValidate {
+public class ConfirmValidate extends BaseValidate {
 
 	private TextView _field1;
 	private TextView _field2;
@@ -40,7 +40,7 @@ public class ConfirmValidate extends AbstractValidate {
 
 
 	@Override
-	public void addValidator(AbstractValidator validator) {
+	public void addValidator(BaseValidator validator) {
 	}
 
 	@Override

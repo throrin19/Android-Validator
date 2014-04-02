@@ -14,14 +14,14 @@ import java.util.List;
  */
 public class Form {
 
-    private List<AbstractValidate> mValidates = new ArrayList<AbstractValidate>();
+    private List<BaseValidate> mValidates = new ArrayList<BaseValidate>();
 
     /**
      * Function adding Validates to our form
      *
-     * @param validate {@link AbstractValidate} Validate to add
+     * @param validate {@link BaseValidate} Validate to add
      */
-    public void addValidates(AbstractValidate validate) {
+    public void addValidates(BaseValidate validate) {
         mValidates.add(validate);
     }
 
@@ -33,9 +33,9 @@ public class Form {
      */
     public boolean validate() {
         boolean formValid = true;
-        Iterator<AbstractValidate> it = mValidates.iterator();
+        Iterator<BaseValidate> it = mValidates.iterator();
         while (it.hasNext()) {
-            AbstractValidate validate = it.next();
+            BaseValidate validate = it.next();
             // Form is invalid if only one of the validates is false (alternation rule)
             formValid = formValid || validate.isValid();
         }
