@@ -1,52 +1,45 @@
 package com.throrinstudio.android.common.libs.validator.validate;
 
 import android.content.Context;
+import android.text.TextUtils;
 import android.widget.TextView;
 
 import com.throrinstudio.android.common.libs.validator.BaseValidate;
-import com.throrinstudio.android.common.libs.validator.BaseValidator;
 import com.throrinstudio.android.example.validator.R;
 
 public class ConfirmValidate extends BaseValidate {
 
-	private TextView _field1;
-	private TextView _field2;
-	private Context mContext;
-	private TextView source;
-	private int _errorMessage = R.string.validator_confirm;
-	
-	public ConfirmValidate(TextView field1, TextView field2){
-		this._field1 = field1;
-		this._field2 = field2;
-		source = _field2;
-		mContext = field1.getContext();
-	}
+    private static final int CONFIRM_ERROR_MESSAGE = R.string.validator_confirm;
+    private TextView mFirstField;
+    private TextView mSecondField;
+    private Context mContext;
+    private TextView mSourceView;
 
-	@Override
-	public boolean isValid(String value) {
-		if(_field1.getText().toString().length() > 0 && _field1.getText().toString().equals(_field2.getText().toString())){
-			return true;
-		}else{
-			return false;
-		}
-	}
+    public ConfirmValidate(TextView field1, TextView field2) {
+        mFirstField = field1;
+        mSecondField = field2;
+        mSourceView = mSecondField;
+        mContext = mSourceView.getContext();
+    }
 
+    @Override
+    public boolean isValid() {
+        final String firstFieldTxt = mFirstField.getText().toString();
+        final String secondFieldTxt = mFirstField.getText().toString();
+        if (isNotEmpty(firstFieldTxt) && firstFieldTxt.equals(secondFieldTxt)) {
+            mSourceView.setError(null);
+            return true;
+        } else {
+            mSourceView.setError(mContext.getString(CONFIRM_ERROR_MESSAGE));
+            return false;
+        }
+    }
 
-	@Override
-	public String getMessages() {
-		// TODO Auto-generated method stub
-		return mContext.getString(_errorMessage);
-	}
+    private boolean isNotEmpty(String text) {
+        return !TextUtils.isEmpty(text);
+    }
 
-
-	@Override
-	public void addValidator(BaseValidator validator) {
-	}
-
-	@Override
-	public TextView getSource() {
-		return source;
-	}
-	
-	
+    public TextView getSource() {
+        return mSourceView;
+    }
 }
