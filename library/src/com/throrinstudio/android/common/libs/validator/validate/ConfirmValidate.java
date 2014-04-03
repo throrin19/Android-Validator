@@ -5,7 +5,7 @@ import android.text.TextUtils;
 import android.widget.TextView;
 
 import com.throrinstudio.android.common.libs.validator.AbstractValidate;
-import com.throrinstudio.android.example.validator.R;
+import com.throrinstudio.android.common.libs.validator.R;
 
 public class ConfirmValidate extends AbstractValidate {
 

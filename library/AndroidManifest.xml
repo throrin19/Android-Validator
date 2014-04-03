@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.throrinstudio.android.example.validator"
+          package="com.throrinstudio.android.common.libs.validator"
           android:versionCode="10600"
           android:versionName="1.6.0">
-    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="17"/>
 </manifest>

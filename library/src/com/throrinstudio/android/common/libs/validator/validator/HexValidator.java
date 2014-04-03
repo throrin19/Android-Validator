@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 import android.content.Context;
 
 import com.throrinstudio.android.common.libs.validator.AbstractValidator;
-import com.throrinstudio.android.example.validator.R;
+import com.throrinstudio.android.common.libs.validator.R;
 
 public class HexValidator extends AbstractValidator {
 

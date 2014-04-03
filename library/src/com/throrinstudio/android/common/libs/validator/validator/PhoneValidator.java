@@ -7,7 +7,7 @@ import android.util.Patterns;
 
 import com.throrinstudio.android.common.libs.validator.AbstractValidator;
 import com.throrinstudio.android.common.libs.validator.ValidatorException;
-import com.throrinstudio.android.example.validator.R;
+import com.throrinstudio.android.common.libs.validator.R;
 
 /**
  * Validator to check if Phone number is correct.

@@ -6,7 +6,7 @@ import android.content.Context;
 
 import com.throrinstudio.android.common.libs.validator.AbstractValidator;
 import com.throrinstudio.android.common.libs.validator.ValidatorException;
-import com.throrinstudio.android.example.validator.R;
+import com.throrinstudio.android.common.libs.validator.R;
 
 /**
  * This validator test value with custom Regex Pattern.

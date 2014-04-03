@@ -4,7 +4,7 @@ import android.content.Context;
 import android.text.TextUtils;
 
 import com.throrinstudio.android.common.libs.validator.AbstractValidator;
-import com.throrinstudio.android.example.validator.R;
+import com.throrinstudio.android.common.libs.validator.R;
 
 public class NotEmptyValidator extends AbstractValidator {
 
