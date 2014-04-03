@@ -32,22 +32,22 @@ public class FormTest {
     }
 
     @Test
-    public void validateFormWithNotEmptyAndEmailAndPhoneValidator() throws Exception {
+    public void validateFormWithNotEmptyAndEmailAndPhoneValidators() throws Exception {
         Context context = Robolectric.getShadowApplication().getApplicationContext();
 
-        TextView notEmptyTxt = new TextView(context);
-        notEmptyTxt.setText("validate");
-        Validate notEmptyValidate = new Validate(notEmptyTxt);
+        TextView notEmptyField = new TextView(context);
+        notEmptyField.setText("validate");
+        Validate notEmptyValidate = new Validate(notEmptyField);
         notEmptyValidate.addValidator(new NotEmptyValidator(context));
 
-        TextView emailTxt = new TextView(context);
-        notEmptyTxt.setText("email@gmail.com");
-        Validate emailValidate = new Validate(emailTxt);
+        TextView emailField = new TextView(context);
+        notEmptyField.setText("email@gmail.com");
+        Validate emailValidate = new Validate(emailField);
         emailValidate.addValidator(new EmailValidator(context));
 
-        TextView phoneTxt = new TextView(context);
-        phoneTxt.setText("+46123456789");
-        Validate phoneValidate = new Validate(phoneTxt);
+        TextView phoneField = new TextView(context);
+        phoneField.setText("+46123456789");
+        Validate phoneValidate = new Validate(phoneField);
         phoneValidate.addValidator(new PhoneValidator(context));
 
         Form form = new Form();

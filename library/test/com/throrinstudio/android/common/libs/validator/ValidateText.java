@@ -12,6 +12,7 @@ import com.throrinstudio.android.common.libs.validator.validator.PhoneValidator;
 import com.throrinstudio.android.common.libs.validator.validator.UrlValidator;
 
 import org.junit.Test;
+import org.junit.Before;
 import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
@@ -24,98 +25,93 @@ import static org.junit.Assert.*;
 @RunWith(RobolectricGradleTestRunner.class)
 public class ValidateText {
 
+    private Context mContext;
+    private TextView mField;
+
+    @Before
+    public void setup() {
+        mContext = Robolectric.getShadowApplication().getApplicationContext();
+        mField = new TextView(mContext);
+    }
+
     @Test
-    public void validateWithoutAnyValidators() throws Exception {
-        Context context = Robolectric.getShadowApplication().getApplicationContext();
-        TextView textView = new TextView(context);
-        Validate validate = new Validate(textView);
+    public void validateFieldWithoutAnyValidators() throws Exception {
+        Validate validate = new Validate(mField);
         assertTrue(validate.isValid());
     }
 
     @Test
-    public void validateNotEmptyField() throws Exception {
-        Context context = Robolectric.getShadowApplication().getApplicationContext();
-        TextView textView = new TextView(context);
-        textView.setText("validate");
-        Validate validate = new Validate(textView);
-        validate.addValidator(new NotEmptyValidator(context));
+    public void validateFieldWithNotEmptyValidator() throws Exception {
+        mField.setText("validate");
+        Validate validate = new Validate(mField);
+        validate.addValidator(new NotEmptyValidator(mContext));
         assertTrue(validate.isValid());
-        textView.setText("");
+        mField.setText("");
         assertFalse(validate.isValid());
     }
 
     @Test
-    public void validateNotEmptyWithAlnumField() throws Exception {
-        Context context = Robolectric.getShadowApplication().getApplicationContext();
-        TextView textView = new TextView(context);
-        textView.setText("1234567890");
-        Validate validate = new Validate(textView);
-        validate.addValidator(new NotEmptyValidator(context));
-        validate.addValidator(new AlnumValidator(context));
+    public void validateFieldWithNotEmptyAndAlnumValidators() throws Exception {
+        mField.setText("1234567890");
+        Validate validate = new Validate(mField);
+        validate.addValidator(new NotEmptyValidator(mContext));
+        validate.addValidator(new AlnumValidator(mContext));
         assertTrue(validate.isValid());
-        textView.setText("");
+        mField.setText("");
         assertFalse(validate.isValid());
-        textView.setText("abcdef");
+        mField.setText("abcdef");
         assertFalse(validate.isValid());
     }
 
     @Test
-    public void validateNotEmptyWithEmailField() throws Exception {
-        Context context = Robolectric.getShadowApplication().getApplicationContext();
-        TextView textView = new TextView(context);
-        textView.setText("email@yahoo.com");
-        Validate validate = new Validate(textView);
-        validate.addValidator(new NotEmptyValidator(context));
-        validate.addValidator(new EmailValidator(context));
+    public void validateFieldWithNotEmptyAndEmailValidators() throws Exception {
+        mField.setText("email@yahoo.com");
+        Validate validate = new Validate(mField);
+        validate.addValidator(new NotEmptyValidator(mContext));
+        validate.addValidator(new EmailValidator(mContext));
         assertTrue(validate.isValid());
-        textView.setText("");
+        mField.setText("");
         assertFalse(validate.isValid());
-        textView.setText("@gmail.com");
+        mField.setText("@gmail.com");
         assertFalse(validate.isValid());
     }
 
     @Test
-    public void validateNotEmptyWithPhoneField() throws Exception {
-        Context context = Robolectric.getShadowApplication().getApplicationContext();
-        TextView textView = new TextView(context);
-        textView.setText("+48600123456");
-        Validate validate = new Validate(textView);
-        validate.addValidator(new NotEmptyValidator(context));
-        validate.addValidator(new PhoneValidator(context));
+    public void validateFieldWithNotEmptyAndPhoneValidators() throws Exception {
+        mField.setText("+48600123456");
+        Validate validate = new Validate(mField);
+        validate.addValidator(new NotEmptyValidator(mContext));
+        validate.addValidator(new PhoneValidator(mContext));
         assertTrue(validate.isValid());
-        textView.setText("");
+        mField.setText("");
         assertFalse(validate.isValid());
-        textView.setText("abcde_fgh");
+        mField.setText("abcde_fgh");
         assertFalse(validate.isValid());
     }
 
     @Test
-    public void validateNotEmptyWithHexField() throws Exception {
-        Context context = Robolectric.getShadowApplication().getApplicationContext();
-        TextView textView = new TextView(context);
-        textView.setText("1234567890abcdef");
-        Validate validate = new Validate(textView);
-        validate.addValidator(new NotEmptyValidator(context));
-        validate.addValidator(new HexValidator(context));
+    public void validateFieldWithNotEmptyAndHexValidators() throws Exception {
+        mField.setText("1234567890abcdef");
+        Validate validate = new Validate(mField);
+        validate.addValidator(new NotEmptyValidator(mContext));
+        validate.addValidator(new HexValidator(mContext));
         assertTrue(validate.isValid());
-        textView.setText("");
+        mField.setText("");
         assertFalse(validate.isValid());
-        textView.setText("abcdefg");
+        mField.setText("abcdefg");
         assertFalse(validate.isValid());
     }
 
     @Test
-    public void validateNotEmptyWithUrlField() throws Exception {
-        Context context = Robolectric.getShadowApplication().getApplicationContext();
-        TextView textView = new TextView(context);
-        textView.setText("http://www.github.com/test/");
-        Validate validate = new Validate(textView);
-        validate.addValidator(new NotEmptyValidator(context));
-        validate.addValidator(new UrlValidator(context));
+    public void validateFieldWithNotEmptyAndUrlValidators() throws Exception {
+        mField.setText("http://www.github.com/test/");
+        Validate validate = new Validate(mField);
+        validate.addValidator(new NotEmptyValidator(mContext));
+        validate.addValidator(new UrlValidator(mContext));
         assertTrue(validate.isValid());
-        textView.setText("");
+        mField.setText("");
         assertFalse(validate.isValid());
-        textView.setText("test");
+        mField.setText("test");
         assertFalse(validate.isValid());
     }
 }
