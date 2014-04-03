@@ -4,14 +4,14 @@ import java.util.regex.Pattern;
 
 import android.content.Context;
 
-import com.throrinstudio.android.common.libs.validator.BaseValidator;
+import com.throrinstudio.android.common.libs.validator.AbstractValidator;
 import com.throrinstudio.android.common.libs.validator.ValidatorException;
 import com.throrinstudio.android.example.validator.R;
 
 /**
  * This validator test value with custom Regex Pattern.
  */
-public class RegExpValidator extends BaseValidator {
+public class RegExpValidator extends AbstractValidator {
 
     private static final int DEFAULT_ERROR_MESSAGE_RESOURCE = R.string.validator_regexp;
     private Pattern mPattern;

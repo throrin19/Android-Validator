@@ -1,6 +1,6 @@
 package com.throrinstudio.android.common.libs.validator;
 
-public abstract class BaseValidate {
+public abstract class AbstractValidate {
 
     /**
      * Validate source.

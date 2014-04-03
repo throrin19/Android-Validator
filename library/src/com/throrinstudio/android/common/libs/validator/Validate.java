@@ -5,9 +5,9 @@ import java.util.List;
 
 import android.widget.TextView;
 
-public class Validate extends BaseValidate {
+public class Validate extends AbstractValidate {
 
-    private List<BaseValidator> mValidators = new ArrayList<BaseValidator>();
+    private List<AbstractValidator> mValidators = new ArrayList<AbstractValidator>();
     private TextView mSourceView;
 
     public Validate(TextView sourceView) {
@@ -17,14 +17,14 @@ public class Validate extends BaseValidate {
     /**
      * Add a new validator for fields attached
      *
-     * @param validator {@link BaseValidator} : The validator to attach
+     * @param validator {@link AbstractValidator} : The validator to attach
      */
-    public void addValidator(BaseValidator validator) {
+    public void addValidator(AbstractValidator validator) {
         mValidators.add(validator);
     }
 
     public boolean isValid() {
-        for (BaseValidator validator : mValidators) {
+        for (AbstractValidator validator : mValidators) {
             try {
                 if (!validator.isValid(mSourceView.getText().toString())) {
                     mSourceView.setError(validator.getMessage());

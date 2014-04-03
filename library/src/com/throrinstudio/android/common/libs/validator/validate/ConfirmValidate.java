@@ -4,10 +4,10 @@ import android.content.Context;
 import android.text.TextUtils;
 import android.widget.TextView;
 
-import com.throrinstudio.android.common.libs.validator.BaseValidate;
+import com.throrinstudio.android.common.libs.validator.AbstractValidate;
 import com.throrinstudio.android.example.validator.R;
 
-public class ConfirmValidate extends BaseValidate {
+public class ConfirmValidate extends AbstractValidate {
 
     private static final int CONFIRM_ERROR_MESSAGE = R.string.validator_confirm;
     private TextView mFirstField;

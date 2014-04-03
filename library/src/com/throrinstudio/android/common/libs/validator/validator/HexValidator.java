@@ -4,10 +4,10 @@ import java.util.regex.Pattern;
 
 import android.content.Context;
 
-import com.throrinstudio.android.common.libs.validator.BaseValidator;
+import com.throrinstudio.android.common.libs.validator.AbstractValidator;
 import com.throrinstudio.android.example.validator.R;
 
-public class HexValidator extends BaseValidator {
+public class HexValidator extends AbstractValidator {
 
     private static final Pattern HEX_PATTERN = Pattern.compile("^(#|)[0-9A-Fa-f]+$");
     private static final int DEFAULT_ERROR_MESSAGE_RESOURCE = R.string.validator_hex;
