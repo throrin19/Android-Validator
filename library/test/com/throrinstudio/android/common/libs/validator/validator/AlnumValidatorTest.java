@@ -23,5 +23,7 @@ public class AlnumValidatorTest {
         Context context = Robolectric.getShadowApplication().getApplicationContext();
         AlnumValidator alnumValidator = new AlnumValidator(context);
         assertTrue(alnumValidator.isValid("1234567890"));
+        assertFalse(alnumValidator.isValid("abcdef"));
+        assertTrue(alnumValidator.isValid(""));
     }
 }
