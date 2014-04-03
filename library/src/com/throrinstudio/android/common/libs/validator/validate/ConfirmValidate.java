@@ -25,7 +25,7 @@ public class ConfirmValidate extends AbstractValidate {
     @Override
     public boolean isValid() {
         final String firstFieldTxt = mFirstField.getText().toString();
-        final String secondFieldTxt = mFirstField.getText().toString();
+        final String secondFieldTxt = mSecondField.getText().toString();
         if (isNotEmpty(firstFieldTxt) && firstFieldTxt.equals(secondFieldTxt)) {
             mSourceView.setError(null);
             return true;
