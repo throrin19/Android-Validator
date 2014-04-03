@@ -38,6 +38,15 @@ Comming Soon
 
 Comming Soon
 
+Testing
+---
+
+In order to execute tests:
+``` java
+gradle localTest
+```
+Results are available in app/build/reports/tests/index.html
+
 Use
 ---
 
