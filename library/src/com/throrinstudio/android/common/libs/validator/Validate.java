@@ -1,75 +1,47 @@
 package com.throrinstudio.android.common.libs.validator;
 
 import java.util.ArrayList;
-import java.util.Iterator;
+import java.util.List;
 
 import android.widget.TextView;
 
+public class Validate extends AbstractValidate {
 
-public class Validate extends AbstractValidate{
+    private List<AbstractValidator> mValidators = new ArrayList<AbstractValidator>();
+    private TextView mSourceView;
 
-	/**
-     * Validator chain
-     */
-    protected ArrayList<AbstractValidator> _validators = new ArrayList<AbstractValidator>();
-    
-    /**
-     * Validation failure messages
-     */
-    protected String _message = new String();
-    
-    /**
-     * 
-     */
-    protected TextView _source;
-    
-    
-    public Validate(TextView source){
-    	this._source = source;
+    public Validate(TextView sourceView) {
+        mSourceView = sourceView;
     }
 
     /**
-     * Adds a validator to the end of the chain
+     * Add a new validator for fields attached
      *
-     * @param validator
+     * @param validator {@link AbstractValidator} : The validator to attach
      */
-    public void addValidator(AbstractValidator validator)
-    {
-    	this._validators.add(validator);
-    	return;
+    public void addValidator(AbstractValidator validator) {
+        mValidators.add(validator);
     }
-    
-    public boolean isValid(String value){
-    	boolean result = true;
-    	this._message = new String();
-    	
-    	Iterator<AbstractValidator> it = this._validators.iterator();
-    	while(it.hasNext()){
-    		AbstractValidator validator = it.next();
-            try{
-                if(!validator.isValid(value)){
-                    this._message = validator.getMessage();
-                    result = false;
-                    break;
+
+    public boolean isValid() {
+        for (AbstractValidator validator : mValidators) {
+            try {
+                if (!validator.isValid(mSourceView.getText().toString())) {
+                    mSourceView.setError(validator.getMessage());
+                    return false;
                 }
-            }catch(ValidatorException e){
-                System.err.println(e.getMessage());
-                System.err.println(e.getStackTrace());
-                this._message = e.getMessage();
-                result = false;
-                break;
+            } catch (ValidatorException e) {
+                e.printStackTrace();
+                mSourceView.setError(e.getMessage());
+                return false;
             }
-    	}
-    	
-    	return result;
+        }
+        mSourceView.setError(null);
+        return true;
     }
-    
-    public String getMessages(){
-    	return this._message;
+
+    public TextView getSource() {
+        return mSourceView;
     }
-    
-    public TextView getSource(){
-    	return this._source;
-    }
-    
+
 }
