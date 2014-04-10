@@ -33,8 +33,8 @@ public class Form {
     public boolean validate() {
         boolean formValid = true;
         for (AbstractValidate validate : mValidates) {
-            // Form is invalid if only one of the validates is false (alternation rule)
-            formValid = formValid || validate.isValid();
+            //  Use & in order to evaluate both side of the operation.
+            formValid = formValid & validate.isValid();
         }
         return formValid;
     }
