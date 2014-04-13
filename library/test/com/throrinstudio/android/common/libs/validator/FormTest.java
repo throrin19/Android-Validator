@@ -41,7 +41,7 @@ public class FormTest {
         notEmptyValidate.addValidator(new NotEmptyValidator(context));
 
         TextView emailField = new TextView(context);
-        notEmptyField.setText("email@gmail.com");
+        emailField.setText("email@gmail.com");
         Validate emailValidate = new Validate(emailField);
         emailValidate.addValidator(new EmailValidator(context));
 
