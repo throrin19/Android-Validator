@@ -31,11 +31,18 @@ public class Form {
      * @return boolean true if the form is valid, otherwise false
      */
     public boolean validate() {
-        boolean formValid = true;
+        boolean result  = true;
+        int validator   = 0;
         for (AbstractValidate validate : mValidates) {
             //  Use & in order to evaluate both side of the operation.
-            formValid = formValid & validate.isValid();
+            result = validate.isValid();
+            if (!result){
+                validator++;
+            }
         }
-        return formValid;
+        if (validator > 0){
+            result = false;
+        }
+        return result;
     }
 }
