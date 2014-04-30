@@ -15,7 +15,7 @@ public class NotEmptyValidator extends AbstractValidator {
     }
 
     public NotEmptyValidator(Context c, int errorMessage) {
-        super(c, DEFAULT_ERROR_MESSAGE_RESOURCE);
+        super(c, errorMessage);
     }
 
     @Override
