@@ -33,4 +33,11 @@ public abstract class AbstractValidator {
     public String getMessage() {
         return mContext.getString(mErrorMessageRes);
     }
+
+   /**
+    * Sets the Context of the validator. Useful if we want to switch Context after a Configuration Change
+    */
+    public void setContext(Context c) {
+        this.mContext = c;
+    }
 }
