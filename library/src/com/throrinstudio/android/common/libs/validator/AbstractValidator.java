@@ -9,7 +9,7 @@ import android.content.Context;
  */
 public abstract class AbstractValidator {
 
-    private Context mContext;
+    public Context mContext;
     private int mErrorMessageRes;
 
     public AbstractValidator(Context c, int errorMessageRes) {
