@@ -6,6 +6,9 @@ import com.throrinstudio.android.common.libs.validator.AbstractValidator;
 
 public class RangeValidator extends AbstractValidator {
 
+	/**
+	 * The range's start
+	 */
 	final double START_RANGE;
 
 	final double END_RANGE;
@@ -22,7 +25,7 @@ public class RangeValidator extends AbstractValidator {
 
 	@Override
 	public String getMessage() {
-		return mContext.getString(mErrorMessage);
+		return getContext().getString(mErrorMessage);
 	}
 
 	@Override
