@@ -59,18 +59,16 @@ public class RangeValidator extends AbstractValidator {
 		return getContext().getString(mErrorMessage);
 	}
 
+	/**
+	 * Checks is value is between given range
+	 * @return true if between range; false if outside of range
+	 */
 	@Override
 	public boolean isValid(String value) {
-		if (value != null) {
-			if (value.length() > 0) {
-				double inputedSize = Double.parseDouble(value);
-				if (inputedSize >= START_RANGE
-						&& inputedSize <= END_RANGE)
-					return true;
-				else
-					return false;
-			} else
-				return false;
+		if (value != null && value.length() > 0) {
+			double inputedSize = Double.parseDouble(value);
+			return inputedSize >= START_RANGE
+					&& inputedSize <= END_RANGE;
 		} else
 			return false;
 	}
