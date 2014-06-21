@@ -10,4 +10,5 @@
     <string name="validator_phone">Phone number is not in a valid format.</string>
     <string name="validator_range">The value is not between the required range.</string>
     <string name="validator_date">The entered date is not valid.</string>
+    <string name="validator_ip">The ip address is not valid.</string>
 </resources>
