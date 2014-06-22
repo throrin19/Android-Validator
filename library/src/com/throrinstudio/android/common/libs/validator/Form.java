@@ -1,48 +1,41 @@
 package com.throrinstudio.android.common.libs.validator;
 
 import java.util.ArrayList;
-import java.util.Iterator;
-
-import android.widget.TextView;
+import java.util.List;
 
 /**
  * Form Validation Class
- *
+ * <p/>
  * Immediately, only works with EditText
- * 
- * @author throrin19
- * 
- * @version 1.0
  *
+ * @author throrin19
+ * @version 1.0
  */
 public class Form {
 
-	protected ArrayList<AbstractValidate> _validates = new ArrayList<AbstractValidate>();
-	
-	/**
-	 * Function adding Validates to our form
-	 * @param validate
-     *   {@link AbstractValidate} Validate to add
-	 */
-	public void addValidates(AbstractValidate validate){
-		this._validates.add(validate);
-		return;
-	}
-	
-	/**
-	 * Called to validate our form.
+    private List<AbstractValidate> mValidates = new ArrayList<AbstractValidate>();
+
+    /**
+     * Function adding Validates to our form
+     *
+     * @param validate {@link AbstractValidate} Validate to add
+     */
+    public void addValidates(AbstractValidate validate) {
+        mValidates.add(validate);
+    }
+
+    /**
+     * Called to validate our form.
      * If an error is found, it will be displayed in the corresponding field.
-	 * @return
-	 * 		boolean :   true if the form is valid
-     *                  false if the form is invalid
-	 */
-	public boolean validate(){
-		boolean result = true;
-		Iterator<AbstractValidate> it = this._validates.iterator();
-		while(it.hasNext()){
-			AbstractValidate validate = it.next();
-			result = validate.isValid();
-		}
-		return result;
-	}
+     *
+     * @return boolean true if the form is valid, otherwise false
+     */
+    public boolean validate() {
+        boolean formValid = true;
+        for (AbstractValidate validate : mValidates) {
+            //  Use & in order to evaluate both side of the operation.
+            formValid = formValid & validate.isValid();
+        }
+        return formValid;
+    }
 }

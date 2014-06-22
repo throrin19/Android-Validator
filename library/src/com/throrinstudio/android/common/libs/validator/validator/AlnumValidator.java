@@ -1,41 +1,29 @@
 package com.throrinstudio.android.common.libs.validator.validator;
 
-import java.util.regex.Pattern;
-
 import android.content.Context;
+import android.text.TextUtils;
 
 import com.throrinstudio.android.common.libs.validator.AbstractValidator;
-import com.throrinstudio.android.example.validator.R;
+import com.throrinstudio.android.common.libs.validator.R;
 
 /**
  * Validator to check if a field contains only numbers and letters.
  * Avoids having special characters like accents.
  */
-public class AlnumValidator extends AbstractValidator{
+public class AlnumValidator extends AbstractValidator {
 
-    /**
-     * This si Alnum Pattern to verify value.
-     */
-    private static final Pattern mPattern = Pattern.compile("^[A-Za-z0-9]+$");
-
-    private int mErrorMessage = R.string.validator_alnum;
+    private static final int DEFAULT_ERROR_MESSAGE_RESOURCE = R.string.validator_alnum;
 
     public AlnumValidator(Context c) {
-        super(c);
+        super(c, DEFAULT_ERROR_MESSAGE_RESOURCE);
     }
 
-    public AlnumValidator(Context c, int errorMessage) {
-        super(c);
-        mErrorMessage = errorMessage;
-    }
-
-    @Override
-    public boolean isValid(String value) {
-        return mPattern.matcher(value).matches();
+    public AlnumValidator(Context c, int errorMessageRes) {
+        super(c, errorMessageRes);
     }
 
     @Override
-    public String getMessage() {
-        return mContext.getString(mErrorMessage);
+    public boolean isValid(String text) {
+        return TextUtils.isDigitsOnly(text);
     }
 }

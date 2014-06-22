@@ -5,34 +5,23 @@ import java.util.regex.Pattern;
 import android.content.Context;
 
 import com.throrinstudio.android.common.libs.validator.AbstractValidator;
-import com.throrinstudio.android.example.validator.R;
-
+import com.throrinstudio.android.common.libs.validator.R;
 
 public class HexValidator extends AbstractValidator {
 
-    /**
-     * This is Hex Pattern to verify value.
-     */
-    private static final Pattern mPattern = Pattern.compile("^(#|)[0-9A-Fa-f]+$");
-
-    private int mErrorMessage = R.string.validator_alnum;
+    private static final Pattern HEX_PATTERN = Pattern.compile("^(#|)[0-9A-Fa-f]+$");
+    private static final int DEFAULT_ERROR_MESSAGE_RESOURCE = R.string.validator_hex;
 
     public HexValidator(Context c) {
-        super(c);
+        super(c, DEFAULT_ERROR_MESSAGE_RESOURCE);
     }
 
-    public HexValidator(Context c, int errorMessage) {
-        super(c);
-        mErrorMessage = errorMessage;
-    }
-
-    @Override
-    public boolean isValid(String value) {
-        return mPattern.matcher(value).matches();
+    public HexValidator(Context c, int errorMessageRes) {
+        super(c, errorMessageRes);
     }
 
     @Override
-    public String getMessage() {
-        return mContext.getString(mErrorMessage);
+    public boolean isValid(String text) {
+        return HEX_PATTERN.matcher(text).matches();
     }
 }
