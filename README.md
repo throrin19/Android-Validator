@@ -72,6 +72,9 @@ For some validators, functions can change the validation rules. The validator cu
 +   **RegExpPattern** :     Ensure that the field does match setted Pattern.
 +   **PhoneValidator** :    Ensure that the field is a valid phone number.
 +   **RangeValidator** :    Validates whether the given value is bettween a range of values
++   **NumericValidator** :  Checks whether the field contains only numeric digits
++   **IPAddressValidator** : Checks whether the field contains a valid IP Address
++   **MockValidator** : Used by dev as a placeholder while testing validation
 +   **Custom Validator** :  You can create your own Validator. To do this, you can just create class extends AbstractValidator :
 
 ``` java
@@ -135,6 +138,15 @@ if(mForm.validate()){
 }
 ```
 
+You can close the error using the form. Can close all errors or just one :
+
+```java
+// close one error
+mForm.closeError(emailField);
+// close all errors
+mForm.closeAllErrors()
+```
+
 ## Contrbute
 
 +   Fork the repo
@@ -153,7 +165,7 @@ if(mForm.validate()){
     ```
 +   Make a pull request to `development` branch
 
-### Changelog
+## Changelog
 
 +   **0.1** : Create library
 +   **0.2** : Add ConfirmValidate and OrTwoRequiredValidate
@@ -166,7 +178,19 @@ if(mForm.validate()){
 +   **1.6.0** : Fix bugs, optimize code, add contributions
 +   **1.7.0** : Refactoring/Cleaning, add UnitTest
 +   **1.8.0**: Optimize code, add new validators
++   **1.9.0** : Add validators, add closeError, closeAllErrors, translate into Korean, set the error message by resId or by specifying a string.
 
+## Contributors
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/throrin19/android-validator/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
++   [piobab](https://github.com/piobab)
++   [andreamaglie](https://github.com/andreamaglie)
++   [amondnet](https://github.com/amondnet)
++   [Leandros](https://github.com/Leandros)
++   [veelck](https://github.com/veelck)
++   [2bard](https://github.com/2bard)
++   [Exikle](https://github.com/Exikle)
++   [LiorZ](https://github.com/LiorZ)
++   [paddyzab](https://github.com/paddyzab)
++   [sys1yagi](https://github.com/sys1yagi)
++   [rogerg9999](https://github.com/rogerg9999)
++   [atermenji](https://github.com/atermenji)

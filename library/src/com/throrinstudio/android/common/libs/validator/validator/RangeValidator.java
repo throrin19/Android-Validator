@@ -3,11 +3,12 @@ package com.throrinstudio.android.common.libs.validator.validator;
 import android.content.Context;
 
 import com.throrinstudio.android.common.libs.validator.AbstractValidator;
+import com.throrinstudio.android.common.libs.validator.R;
 
 /**
- * Validates whether the given value is bettween a range of values
+ * Validates whether the given value is between a range of values
  * 
- * @author Exikle
+ * @author Dixon D'Cunha (Exikle)
  */
 public class RangeValidator extends AbstractValidator {
 
@@ -25,6 +26,17 @@ public class RangeValidator extends AbstractValidator {
 	 * The error Id from the string resource
 	 */
 	private static int mErrorMessage; // Your custom error message
+
+	/**
+	 * Default error message if none specified
+	 */
+	private static final int DEFAULT_ERROR_MESSAGE_RESOURCE = R.string.validator_range;
+
+	public RangeValidator(Context c, double start, double end) {
+		super(c, DEFAULT_ERROR_MESSAGE_RESOURCE);
+		START_RANGE = start;
+		END_RANGE = end;
+	}
 
 	/**
 	 * @param context
@@ -47,18 +59,16 @@ public class RangeValidator extends AbstractValidator {
 		return getContext().getString(mErrorMessage);
 	}
 
+	/**
+	 * Checks is value is between given range
+	 * @return true if between range; false if outside of range
+	 */
 	@Override
 	public boolean isValid(String value) {
-		if (value != null) {
-			if (value.length() > 0) {
-				double inputedSize = Double.parseDouble(value);
-				if (inputedSize >= START_RANGE
-						&& inputedSize <= END_RANGE)
-					return true;
-				else
-					return false;
-			} else
-				return false;
+		if (value != null && value.length() > 0) {
+			double inputedSize = Double.parseDouble(value);
+			return inputedSize >= START_RANGE
+					&& inputedSize <= END_RANGE;
 		} else
 			return false;
 	}
