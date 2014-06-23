@@ -71,6 +71,7 @@ For some validators, functions can change the validation rules. The validator cu
 +   **HexValidator** :      Ensure that the field has Hex characters.
 +   **RegExpPattern** :     Ensure that the field does match setted Pattern.
 +   **PhoneValidator** :    Ensure that the field is a valid phone number.
++   **RangeValidator** :    Validates whether the given value is bettween a range of values
 +   **Custom Validator** :  You can create your own Validator. To do this, you can just create class extends AbstractValidator :
 
 ``` java
@@ -164,6 +165,7 @@ if(mForm.validate()){
 +   **1.5** : Project reorganization, graddle and maven support
 +   **1.6.0** : Fix bugs, optimize code, add contributions
 +   **1.7.0** : Refactoring/Cleaning, add UnitTest
++   **1.8.0**: Optimize code, add new validators
 
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/throrin19/android-validator/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
