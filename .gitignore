@@ -14,6 +14,7 @@ library/gen/
 
 # Local configuration file (sdk path, etc)
 library/local.properties
+library/project.properties
 
 # Eclipse project files
 library/.classpath

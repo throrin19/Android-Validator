@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="validator_email">이메일 형식이 올바르지 않습니다.</string>
+    <string name="validator_empty">You must complete this field.</string>
+    <string name="validator_url">URL 형식이 올바르지 않습니다.</string>
+    <string name="validator_confirm">입력값이 일치하지 않습니다.</string>
+    <string name="validator_alnum">The value has not only alnum characters</string>
+    <string name="validator_hex">The value has not only hexadecimal digit characters</string>
+    <string name="validator_regexp">The value does not match against pattern.</string>
+    <string name="validator_phone">전화번호 형식이 올바르지 않습니다.</string>
+</resources>

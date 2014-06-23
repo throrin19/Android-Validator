@@ -1,3 +1,4 @@
+
 package com.throrinstudio.android.common.libs.validator.validate;
 
 import android.content.Context;
@@ -14,12 +15,22 @@ public class ConfirmValidate extends AbstractValidate {
     private TextView mSecondField;
     private Context mContext;
     private TextView mSourceView;
+    private final int mErrorMessage;
 
     public ConfirmValidate(TextView field1, TextView field2) {
         mFirstField = field1;
         mSecondField = field2;
         mSourceView = mSecondField;
         mContext = mSourceView.getContext();
+        mErrorMessage = CONFIRM_ERROR_MESSAGE;
+    }
+
+    public ConfirmValidate(TextView field1, TextView field2, int errorMessageResource ) {
+        mFirstField = field1;
+        mSecondField = field2;
+        mSourceView = mSecondField;
+        mContext = mSourceView.getContext();
+        mErrorMessage = errorMessageResource;
     }
 
     @Override
@@ -30,16 +41,17 @@ public class ConfirmValidate extends AbstractValidate {
             mSourceView.setError(null);
             return true;
         } else {
-            mSourceView.setError(mContext.getString(CONFIRM_ERROR_MESSAGE));
+            mSourceView.setError(mContext.getString(mErrorMessage));
             return false;
         }
+    }
+
+    public TextView getSource() {
+        return mSourceView;
     }
 
     private boolean isNotEmpty(String text) {
         return !TextUtils.isEmpty(text);
     }
 
-    public TextView getSource() {
-        return mSourceView;
-    }
 }
