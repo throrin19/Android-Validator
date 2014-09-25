@@ -3,6 +3,7 @@ package com.throrinstudio.android.common.libs.validator;
 import java.util.ArrayList;
 import java.util.List;
 
+import android.graphics.drawable.Drawable;
 import android.widget.TextView;
 
 public class Validate extends AbstractValidate {
@@ -27,12 +28,12 @@ public class Validate extends AbstractValidate {
         for (AbstractValidator validator : mValidators) {
             try {
                 if (!validator.isValid(mSourceView.getText().toString())) {
-                    mSourceView.setError(validator.getMessage());
+                    setSourceViewError(validator.getMessage(), validator.getErrorDrawable());
                     return false;
                 }
             } catch (ValidatorException e) {
                 e.printStackTrace();
-                mSourceView.setError(e.getMessage());
+                setSourceViewError(e.getMessage(), validator.getErrorDrawable());
                 return false;
             }
         }
@@ -44,4 +45,17 @@ public class Validate extends AbstractValidate {
         return mSourceView;
     }
 
+  /**
+   * Sets error on {@link #mSourceView}.
+   *
+   * @param errorMessage  String : the error message
+   * @param errorDrawable Drawable : the drawable to display
+   */
+    private void setSourceViewError(String errorMessage, Drawable errorDrawable) {
+        if(errorDrawable != null) {
+          mSourceView.setError(errorMessage, errorDrawable);
+        } else {
+          mSourceView.setError(errorMessage);
+        }
+    }
 }

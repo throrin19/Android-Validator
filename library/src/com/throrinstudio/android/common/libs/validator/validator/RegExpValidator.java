@@ -3,6 +3,7 @@ package com.throrinstudio.android.common.libs.validator.validator;
 import java.util.regex.Pattern;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 
 import com.throrinstudio.android.common.libs.validator.AbstractValidator;
 import com.throrinstudio.android.common.libs.validator.ValidatorException;
@@ -22,6 +23,10 @@ public class RegExpValidator extends AbstractValidator {
 
     public RegExpValidator(Context c, int errorMessageRes) {
         super(c, errorMessageRes);
+    }
+
+    public RegExpValidator(Context c, int errorMessageRes, Drawable errorDrawable) {
+        super(c, errorMessageRes, errorDrawable);
     }
 
     public void setPattern(String pattern) {

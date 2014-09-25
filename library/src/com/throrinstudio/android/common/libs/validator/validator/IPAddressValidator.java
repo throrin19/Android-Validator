@@ -4,6 +4,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 
 import com.throrinstudio.android.common.libs.validator.AbstractValidator;
 import com.throrinstudio.android.common.libs.validator.R;
@@ -38,7 +39,11 @@ public class IPAddressValidator extends AbstractValidator {
 		super(c, DEFAULT_ERROR_MESSAGE_RESOURCE);
 	}
 
-	@Override
+  public IPAddressValidator(Context c, int errorMessageRes, Drawable errorDrawable) {
+      super(c, errorMessageRes, errorDrawable);
+  }
+
+  @Override
 	public boolean isValid(String ip) {
 		return IPADDRESS_PATTERN.matcher(ip).matches();
 	}

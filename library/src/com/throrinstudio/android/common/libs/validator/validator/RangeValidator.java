@@ -1,6 +1,7 @@
 package com.throrinstudio.android.common.libs.validator.validator;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 
 import com.throrinstudio.android.common.libs.validator.AbstractValidator;
 import com.throrinstudio.android.common.libs.validator.R;
@@ -38,7 +39,13 @@ public class RangeValidator extends AbstractValidator {
 		END_RANGE = end;
 	}
 
-	/**
+  public RangeValidator(Context c, int errorMessageRes, Drawable errorDrawable, double start, double end) {
+    super(c, errorMessageRes, errorDrawable);
+    START_RANGE = start;
+    END_RANGE = end;
+  }
+
+  /**
 	 * @param context
 	 * @param start
 	 *            of the range
