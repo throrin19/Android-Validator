@@ -1,6 +1,7 @@
 package com.throrinstudio.android.common.libs.validator.validator;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.text.TextUtils;
 
 import com.throrinstudio.android.common.libs.validator.AbstractValidator;
@@ -20,6 +21,10 @@ public class AlnumValidator extends AbstractValidator {
 
     public AlnumValidator(Context c, int errorMessageRes) {
         super(c, errorMessageRes);
+    }
+
+    public AlnumValidator(Context c, int errorMessageRes, Drawable errorDrawable) {
+        super(c, errorMessageRes, errorDrawable);
     }
 
     @Override
