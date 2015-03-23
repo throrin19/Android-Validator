@@ -3,6 +3,7 @@ package com.throrinstudio.android.common.libs.validator.validator;
 import java.util.regex.Pattern;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 
 import com.throrinstudio.android.common.libs.validator.AbstractValidator;
 import com.throrinstudio.android.common.libs.validator.R;
@@ -20,7 +21,11 @@ public class HexValidator extends AbstractValidator {
         super(c, errorMessageRes);
     }
 
-    @Override
+    public HexValidator(Context c, int errorMessageRes, Drawable errorDrawable) {
+        super(c, errorMessageRes, errorDrawable);
+    }
+
+  @Override
     public boolean isValid(String text) {
         return HEX_PATTERN.matcher(text).matches();
     }

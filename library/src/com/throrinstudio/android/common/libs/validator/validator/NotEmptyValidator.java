@@ -1,6 +1,7 @@
 package com.throrinstudio.android.common.libs.validator.validator;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.text.TextUtils;
 
 import com.throrinstudio.android.common.libs.validator.AbstractValidator;
@@ -16,6 +17,10 @@ public class NotEmptyValidator extends AbstractValidator {
 
     public NotEmptyValidator(Context c, int errorMessage) {
         super(c, errorMessage);
+    }
+
+    public NotEmptyValidator(Context c, int errorMessageRes, Drawable errorDrawable) {
+        super(c, errorMessageRes, errorDrawable);
     }
 
     @Override

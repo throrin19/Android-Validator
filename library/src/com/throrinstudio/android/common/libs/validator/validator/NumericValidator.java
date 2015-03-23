@@ -1,6 +1,7 @@
 package com.throrinstudio.android.common.libs.validator.validator;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 
 import com.throrinstudio.android.common.libs.validator.AbstractValidator;
 import com.throrinstudio.android.common.libs.validator.R;
@@ -25,7 +26,11 @@ public class NumericValidator extends AbstractValidator {
 		super(c, errorMessage);
 	}
 
-	@Override
+  public NumericValidator(Context c, int errorMessageRes, Drawable errorDrawable) {
+    super(c, errorMessageRes, errorDrawable);
+  }
+
+  @Override
 	public boolean isValid(String str) {
 		return containsOnlyNumbers(str);
 	}
