@@ -1,6 +1,7 @@
 package com.throrinstudio.android.common.libs.validator.validator;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 
 import com.throrinstudio.android.common.libs.validator.AbstractValidator;
 
@@ -20,7 +21,11 @@ public class MockValidator extends AbstractValidator {
 		super(c, DEFAULT_ERROR_MESSAGE_RESOURCE);
 	}
 
-	@Override
+  public MockValidator(Context c, int errorMessageRes, Drawable errorDrawable) {
+    super(c, errorMessageRes, errorDrawable);
+  }
+
+  @Override
 	public boolean isValid(String value) {
 		return true;
 	}

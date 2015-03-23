@@ -3,6 +3,7 @@ package com.throrinstudio.android.common.libs.validator.validator;
 import java.util.regex.Pattern;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.util.Patterns;
 
 import com.throrinstudio.android.common.libs.validator.AbstractValidator;
@@ -19,6 +20,10 @@ public class UrlValidator extends AbstractValidator {
 
     public UrlValidator(Context c, int errorMessageRes) {
         super(c, errorMessageRes);
+    }
+
+    public UrlValidator(Context c, int errorMessageRes, Drawable errorDrawable) {
+        super(c, errorMessageRes, errorDrawable);
     }
 
     @Override

@@ -3,6 +3,7 @@ package com.throrinstudio.android.common.libs.validator.validator;
 import java.util.regex.Pattern;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.util.Patterns;
 
 import com.throrinstudio.android.common.libs.validator.AbstractValidator;
@@ -24,6 +25,10 @@ public class PhoneValidator extends AbstractValidator {
 
     public PhoneValidator(Context c, int errorMessageRes) {
         super(c, errorMessageRes);
+    }
+
+    public PhoneValidator(Context c, int errorMessageRes, Drawable errorDrawable) {
+        super(c, errorMessageRes, errorDrawable);
     }
 
     @Override

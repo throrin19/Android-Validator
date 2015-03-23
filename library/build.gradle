@@ -6,7 +6,7 @@ buildscript {
         }
 
         classpath 'com.android.tools.build:gradle:1.0.0'
-	classpath 'com.github.dcendents:android-maven-plugin:1.2'
+	    classpath 'com.github.dcendents:android-maven-plugin:1.2'
     }
 }
 
@@ -41,7 +41,7 @@ android {
             manifest.srcFile 'AndroidManifest.xml'
             java.srcDirs = ['src']
             resources.srcDirs = ['src']
-            aidl.srcDirs = ['src']
+            aild.srcDirs = ['src']
             renderscript.srcDirs = ['src']
             res.srcDirs = ['res']
             assets.srcDirs = ['assets']

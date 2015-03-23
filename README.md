@@ -179,6 +179,7 @@ mForm.closeAllErrors()
 +   **1.7.0** : Refactoring/Cleaning, add UnitTest
 +   **1.8.0**: Optimize code, add new validators
 +   **1.9.0** : Add validators, add closeError, closeAllErrors, translate into Korean, set the error message by resId or by specifying a string.
++   **1.10.0** : enable gradle builds of the .aar file, allow use of a custom error drawable, define custom error behavior.
 
 ## Contributors
 
@@ -194,3 +195,4 @@ mForm.closeAllErrors()
 +   [sys1yagi](https://github.com/sys1yagi)
 +   [rogerg9999](https://github.com/rogerg9999)
 +   [atermenji](https://github.com/atermenji)
++   [justincpollard](https://github.com/justincpollard)

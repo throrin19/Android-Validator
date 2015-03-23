@@ -4,6 +4,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.text.TextUtils;
 
 import com.throrinstudio.android.common.libs.validator.AbstractValidator;
@@ -20,6 +21,10 @@ public class EmailValidator extends AbstractValidator {
 
     public EmailValidator(Context c, int errorMessageRes) {
         super(c, errorMessageRes);
+    }
+
+    public EmailValidator(Context c, int errorMessageRes, Drawable errorDrawable) {
+        super(c, errorMessageRes, errorDrawable);
     }
 
     /**
