@@ -1,20 +1,19 @@
 buildscript {
-    dependencies {
-        repositories {
-            mavenCentral()
-            mavenLocal()
-        }
+    repositories {
+        jcenter()
+        mavenCentral()
+        mavenLocal()
+    }
 
-        classpath 'com.android.tools.build:gradle:1.0.0'
-	    classpath 'com.github.dcendents:android-maven-plugin:1.2'
+    dependencies {
+      classpath 'com.android.tools.build:gradle:1.5.0'
     }
 }
 
-apply plugin: 'android-library'
-apply plugin: 'android-maven'
+apply plugin: 'com.android.library'
 
 repositories {
-    mavenCentral()
+    jcenter()
     maven {
         url "https://oss.sonatype.org/content/repositories/snapshots"
     }
@@ -41,7 +40,6 @@ android {
             manifest.srcFile 'AndroidManifest.xml'
             java.srcDirs = ['src']
             resources.srcDirs = ['src']
-            aild.srcDirs = ['src']
             renderscript.srcDirs = ['src']
             res.srcDirs = ['res']
             assets.srcDirs = ['assets']
