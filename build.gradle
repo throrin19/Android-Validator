@@ -1,0 +1,18 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        // hack to fix jitpack building issue
+        //  related: https://code.google.com/p/android/issues/detail?id=192875
+        classpath 'org.jacoco:org.jacoco.core:0.7.4.201502262128'
+    }
+}
+
+
+/**
+ * Task to generate a gradle wrapper.
+ */
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.9'
+}
